@@ -1,0 +1,188 @@
+//META{"name":"Material_Discord_Custom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.0.7.4"}*//{}
+
+/** Material Discord by CapnKitten **/
+
+@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.0.7.4);
+
+/** General **/
+
+:root {
+    --accent-color: #4285f4 !important;
+    --accent-color-hover: #3b5074 !important;
+    --accent-color-active: #3daee9 !important;
+    --accent-rgb: rgba(66, 133, 244, 0.3) !important;
+}
+
+/** Fonts **/
+
+* {
+    font-family: Ubuntu, sans-serif !important;
+}
+
+.markup-2BOw-j pre,
+.markup-2BOw-j pre *,
+.markup-2BOw-j pre code,
+.markup-2BOw-j pre code *,
+.markup-2BOw-j code.inline,
+.ace_editor:before {
+    font-family: 'OperatorMono Nerd Font', monospace !important;
+}
+
+/** Custom CSS Editor **/
+
+.ace_editor {
+    margin-top: 0 !important;
+}
+
+.nameTag-3uD-yy .subtext-3CDbHg,
+.ace_editor:before {
+    display: none !important;
+}
+
+/** Magane **/
+
+div.channel-textarea-stickers[data-v-377ce45c] {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+div.channel-textarea-stickers-content[data-v-377ce45c] {
+    margin-top: 7px !important;
+}
+
+div.stickerWindow[data-v-377ce45c] {
+    background: var(--popout-alt) !important;
+    animation: bottom-pop-out 400ms var(--default-animation) !important;
+    right: -118px !important;
+    bottom: 82px !important;
+    box-shadow: var(--shadow-3dp) !important;
+}
+
+div.stickerWindow>div.packs[data-v-377ce45c] {
+    background: rgba(0,0,0,0.25) !important;
+}
+
+div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
+    margin: 4px !important;
+}
+
+.innerDisabled-2mc-iF div#magane {
+    display: none !important;
+}
+
+/** Radial Status **/
+
+[role="img"][aria-label]:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px #666;
+    border-radius: 50%;
+    z-index: 20;
+    border: none !important;
+}
+
+.friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm {
+    padding-left: 15px;
+}
+
+[role="img"][aria-label] foreignObject {
+    mask: none;
+}
+
+[role="img"][aria-label] foreignObject img {
+    border-radius: 50%;
+}
+
+[role="img"][aria-label] svg rect {
+    display: none;
+}
+
+[role="img"][aria-label*="Online"]:before {
+    box-shadow: 0 0 0 2.25px #32a852;
+}
+
+[role="img"][aria-label*="Online via mobile"]:before {
+    box-shadow: 0 0 0 2.25px #4285f4;
+}
+
+[role="img"][aria-label*="Do Not Disturb"]:before {
+    box-shadow: 0 0 0 2.25px #cc0000;
+}
+
+[role="img"][aria-label*="Idle"]:before {
+    box-shadow: 0 0 0 2.25px #faa61a;
+}
+
+[role="img"][aria-label*="Streaming"]:before {
+    box-shadow: 0 0 0 2.25px #6441a5;
+}
+
+[role="img"][aria-label*="Offline"]:before {
+    box-shadow: 0 0 0 2.25px #4d4d4d;
+}
+
+[role="img"][aria-label*="Invisible"]:before {
+    box-shadow: 0 0 0 2.25px #4d4d4d;
+}
+
+/* Hide extraneous online status from friends list */
+.friendsRow-2yicud .status-mz5rqq {
+    display: none;
+}
+
+/* Online status on messages */
+.mask-1l8v16 foreignObject {
+    mask: url(#svg-mask-avatar-status-round-40) !important;
+}
+
+.mask-1l8v16 rect {
+    mask: none;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/** Current guild booster **/
+
+.BE-badge-CurrentGuildBoost{
+    color: #FF73FA;
+    margin-left: 2px !important;
+}
+
+/** Guilds list **/
+
+.listItem-2P_4kh.bd-selected,
+.pill-2uzAFe.bd-selected {
+    background: none !important;
+}
+
+.listItem-2P_4kh .pill-31IEus .item-2hkk8m {
+    opacity: 1 !important;
+}
+
+.listItem-2P_4kh .pill-1m5BUr .item-2hkk8m,
+.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m,
+.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8m,
+.listItem-2P_4kh .pill-1m5BUr.bd-unread .item-2hkk8m {
+    height: 8px !important;
+    width: 4px;
+    top: unset;
+    right: unset;
+    margin: initial;
+    background: var(--header-primary);
+    border-radius: 0 4px 4px 0 !important;
+    box-shadow: none;
+    z-index: 0;
+    transform: none !important;
+    pointer-events: none;
+}
+
+.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 20px"],
+.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 20px"] {
+    height: 20px !important;
+}
+
+.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 40px"],
+.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 40px"] {
+    height: 40px !important;
+}
