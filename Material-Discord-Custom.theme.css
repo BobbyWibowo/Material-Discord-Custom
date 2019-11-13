@@ -2,7 +2,7 @@
 
 /** Material Discord by CapnKitten **/
 
-@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.0.7.4);
+@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.0.9.2);
 
 /** General **/
 
@@ -156,11 +156,13 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .listItem-2P_4kh .pill-1m5BUr .item-2hkk8m,
 .listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m,
 .listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8m,
-.listItem-2P_4kh .pill-1m5BUr.bd-unread .item-2hkk8m {
+.listItem-2P_4kh .pill-1m5BUr.bd-unread .item-2hkk8m,
+.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m {
     height: 8px !important;
     width: 4px;
     top: unset;
     right: unset;
+    left: 0;
     margin: initial;
     background: var(--header-primary);
     border-radius: 0 4px 4px 0 !important;
@@ -170,13 +172,46 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     pointer-events: none;
 }
 
+.wrapper-21YSNc .listItem-2P_4kh {
+    width: 100%;
+}
+
+.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .svg-1X37T1,
+.folderIconWrapper-226oVY {
+    border-radius: var(--border-radius) !important;
+}
+
+.expandedGuilds-1JMD4M .listItem-2P_4kh .pill-31IEus .item-2hkk8m,
+.expandedGuilds-1JMD4M .listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m {
+    top: unset;
+    right: unset;
+    left: 1px
+}
+
+.expandedFolderBackground-2sPsd- {
+    width: 100%;
+    left: unset;
+    border-radius: 0;
+}
+
+.wrapper-21YSNc .expandedFolderBackground-2sPsd-:not(.collapsed-1GMuSb) + .listItem-2P_4kh {
+    margin: 0 auto;
+}
+
+.expandedGuilds-1JMD4M,
+.expandedGuilds-1JMD4M .listItem-2P_4kh {
+    width: 100%;
+}
+
 .listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 20px"],
-.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 20px"] {
+.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 20px"],
+.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*="height: 20px"] {
     height: 20px !important;
 }
 
 .listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 40px"],
-.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 40px"] {
+.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 40px"],
+.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*="height: 40px"] {
     height: 40px !important;
 }
 
@@ -304,4 +339,10 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .BE-badge-CurrentGuildBoost {
     color: #FF73FA;
     margin-left: 2px !important;
+}
+
+/** Info bar in emojis picker **/
+
+.infoBarWrapper-283ttO.infoBarExpanded-2Of7UZ {
+    height: 100px !important;
 }
