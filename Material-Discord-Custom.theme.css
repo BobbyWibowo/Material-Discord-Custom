@@ -346,3 +346,18 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .infoBarWrapper-283ttO.infoBarExpanded-2Of7UZ {
     height: 100px !important;
 }
+
+/** Role Members **/
+
+.popoutList-T9CKZQ .selectableItem-1MP3MQ .image-33JSyf.small-5Os1Bb {
+    background-size: contain;
+    border-radius: 100%;
+}
+
+/** Avatar in Member card **/
+
+.root-SR8cQa .avatar-3EQepX,
+.root-SR8cQa .avatar-3EQepX:before,
+.root-SR8cQa .avatar-3EQepX foreignObject img {
+    border-radius: var(--border-radius);
+}
