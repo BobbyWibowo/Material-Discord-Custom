@@ -341,10 +341,18 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     margin-left: 2px !important;
 }
 
-/** Info bar in emojis picker **/
+/** Emojis picker **/
 
 .infoBarWrapper-283ttO.infoBarExpanded-2Of7UZ {
     height: 100px !important;
+}
+
+.emojiPicker-3m1S-j .scroller-3vODG7 {
+    height: 220px !important;
+}
+
+.emojiPicker-3m1S-j .scroller-3vODG7.containerWithInfoBar-2acjZU {
+    height: 178px !important;
 }
 
 /** Role Members **/
