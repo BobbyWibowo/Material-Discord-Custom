@@ -369,3 +369,28 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .root-SR8cQa .avatar-3EQepX foreignObject img {
     border-radius: var(--border-radius);
 }
+
+/** Blocked messages **/
+
+.messageGroupBlocked-3wrQQX {
+    display: none;
+}
+
+.messageGroupBlocked-3wrQQX:last-child {
+    display: block;
+    cursor: not-allowed;
+}
+
+.messageGroupBlocked-3wrQQX:last-child .messageGroupBlockedBtn-1PBBh- {
+    color: transparent;
+    pointer-events: none;
+}
+
+.messageGroupBlocked-3wrQQX:last-child .messageGroupBlockedBtn-1PBBh-:after {
+    display: block;
+    content: "Last message came from blocked users 😢";
+    font-size: 14px;
+    color: rgb(240, 71, 71);
+    top: -35px;
+    position: relative;
+}
