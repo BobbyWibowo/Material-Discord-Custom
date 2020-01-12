@@ -402,3 +402,9 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .iconBadge-2NuvG9 {
     display: none !important;
 }
+
+/** Fix message input **/
+
+.fontSize16Padding-3Wk7zP {
+    padding: 0 0 0 10px;
+}
