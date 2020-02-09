@@ -39,8 +39,9 @@
     display: none !important;
 }
 
-/** Magane **/
+/** TODO: Magane **/
 
+/*
 div.channel-textarea-stickers[data-v-377ce45c] {
     opacity: 1 !important;
     transform: none !important;
@@ -69,6 +70,7 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .innerDisabled-2mc-iF div#magane {
     display: none !important;
 }
+*/
 
 /** Radial Status **/
 
@@ -132,7 +134,8 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     display: none;
 }
 
-/* Apply mask to avatars on messages */
+/* TODO: Apply mask to avatars on messages */
+/*
 .container-1YxwTf .mask-1l8v16 foreignObject {
     mask: url(#svg-mask-avatar-status-round-40) !important;
 }
@@ -141,9 +144,11 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     mask: none;
     clip-path: circle(50% at 50% 50%);
 }
+*/
 
-/** Guilds list **/
+/** TODO: Guilds list **/
 
+/*
 .listItem-2P_4kh.bd-selected,
 .pill-2uzAFe.bd-selected {
     background: none !important;
@@ -214,6 +219,7 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*="height: 40px"] {
     height: 40px !important;
 }
+*/
 
 /** Spotify **/
 
@@ -341,16 +347,6 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     margin-left: 2px !important;
 }
 
-/** Emojis picker **/
-
-.infoBarWrapper-283ttO.infoBarExpanded-2Of7UZ {
-    height: 100px !important;
-}
-
-.emojiPicker-3m1S-j .scroller-3vODG7 {
-    height: 187px !important;
-}
-
 /** Role Members **/
 
 .popoutList-T9CKZQ .selectableItem-1MP3MQ .image-33JSyf.small-5Os1Bb {
@@ -366,8 +362,9 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     border-radius: var(--border-radius);
 }
 
-/** Blocked messages **/
+/** TODO: Blocked messages **/
 
+/*
 .messageGroupBlocked-3wrQQX {
     display: none;
 }
@@ -390,6 +387,7 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     top: -35px;
     position: relative;
 }
+*/
 
 /** Restore border radius in Rich Presence large assets **/
 
@@ -401,10 +399,4 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .iconBadge-2NuvG9 {
     display: none !important;
-}
-
-/** Fix message input **/
-
-.fontSize16Padding-3Wk7zP {
-    padding: 0 0 0 10px;
 }
