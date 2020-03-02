@@ -39,9 +39,13 @@
     display: none !important;
 }
 
-/** TODO: Magane **/
+/** Magane **/
 
-/*
+/* Enable overflow on channel text area */
+.channelTextArea-rNsIhG > .scrollableContainer-2NUZem {
+    overflow: visible;
+}
+
 div.channel-textarea-stickers[data-v-377ce45c] {
     opacity: 1 !important;
     transform: none !important;
@@ -55,7 +59,7 @@ div.stickerWindow[data-v-377ce45c] {
     background: var(--popout-alt) !important;
     animation: bottom-pop-out 400ms var(--default-animation) !important;
     right: -118px !important;
-    bottom: 82px !important;
+    bottom: 76px !important;
     box-shadow: var(--shadow-3dp) !important;
 }
 
@@ -70,7 +74,6 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .innerDisabled-2mc-iF div#magane {
     display: none !important;
 }
-*/
 
 /** Radial Status **/
 
@@ -129,9 +132,13 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     box-shadow: 0 0 0 2.25px #4d4d4d;
 }
 
-/* Hide extraneous online status from friends list */
-.friendsRow-2yicud .status-mz5rqq {
-    display: none;
+/* Friends/People list */
+.peopleListItem-2nzedh .avatar-3W3CeO {
+    margin: 3px 12px 0 3px;
+}
+
+.peopleListItem-2nzedh .text-37NqbO {
+    margin-top: 3px;
 }
 
 /* TODO: Apply mask to avatars on messages */
@@ -400,3 +407,4 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 .iconBadge-2NuvG9 {
     display: none !important;
 }
+
