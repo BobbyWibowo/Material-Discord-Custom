@@ -141,17 +141,16 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     margin-top: 3px;
 }
 
-/* TODO: Apply mask to avatars on messages */
-/*
-.container-1YxwTf .mask-1l8v16 foreignObject {
+/* Apply mask to avatars on messages */
+
+.message-2qnXI6 .mask-1l8v16 foreignObject {
     mask: url(#svg-mask-avatar-status-round-40) !important;
 }
 
-.container-1YxwTf .mask-1l8v16 rect {
+.message-2qnXI6 .mask-1l8v16 rect {
     mask: none;
     clip-path: circle(50% at 50% 50%);
 }
-*/
 
 /** TODO: Guilds list **/
 
@@ -350,7 +349,7 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .topSectionNormal-2-vo2m .BE-badge-CurrentGuildBoost,
 .header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .BE-badge-CurrentGuildBoost {
-    color: #FF73FA;
+    color: #FF73FA !important;
     margin-left: 2px !important;
 }
 
@@ -369,33 +368,6 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     border-radius: var(--border-radius);
 }
 
-/** TODO: Blocked messages **/
-
-/*
-.messageGroupBlocked-3wrQQX {
-    display: none;
-}
-
-.messageGroupBlocked-3wrQQX:last-child {
-    display: block;
-    cursor: not-allowed;
-}
-
-.messageGroupBlocked-3wrQQX:last-child .messageGroupBlockedBtn-1PBBh- {
-    color: transparent;
-    pointer-events: none;
-}
-
-.messageGroupBlocked-3wrQQX:last-child .messageGroupBlockedBtn-1PBBh-:after {
-    display: block;
-    content: "Last message came from blocked users 😢";
-    font-size: 14px;
-    color: rgb(240, 71, 71);
-    top: -35px;
-    position: relative;
-}
-*/
-
 /** Restore border radius in Rich Presence large assets **/
 
 .assetsLargeImage-eYwpTX {
@@ -406,4 +378,23 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .iconBadge-2NuvG9 {
     display: none !important;
+}
+
+/** Read All Notifications Button **/
+
+.childWrapper-anI2G9[style="height: 20px;"] {
+    background: none !important;
+}
+
+/** Member Permissions **/
+
+.member-perm {
+    position: relative;
+    min-width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 16px;
+    border: none;
+    background: var(--popout-color);
+    transition: 200ms ease;
 }
