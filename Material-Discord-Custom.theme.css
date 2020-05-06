@@ -398,3 +398,9 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     background: var(--popout-color);
     transition: 200ms ease;
 }
+
+/** Fix spacing above usernames on messages **/
+
+.message-2qnXI6.groupStart-23k01U .avatar-1BDn8e {
+    position: absolute;
+}
