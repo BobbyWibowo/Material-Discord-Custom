@@ -25,7 +25,7 @@
 .markup-2BOw-j pre code *,
 .markup-2BOw-j code.inline,
 .ace_editor:before {
-    font-family: 'OperatorMono Nerd Font', monospace !important;
+    font-family: 'Operator Mono', monospace !important;
 }
 
 /** Custom CSS Editor **/
