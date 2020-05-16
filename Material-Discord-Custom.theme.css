@@ -1,8 +1,8 @@
-//META{"name":"Material_Discord_Custom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.2.6.1"}*//{}
+//META{"name":"Material_Discord_Custom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.2.8"}*//{}
 
 /** Material Discord by CapnKitten **/
 
-@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.2.6.1);
+@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.2.8);
 
 /** General **/
 
@@ -403,4 +403,19 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .message-2qnXI6.groupStart-23k01U .avatar-1BDn8e {
     position: absolute;
+}
+
+/** Show Hidden Channels support **/
+
+.modeLocked-SZJhTy .content-3at_AU svg path:nth-child(2),
+.modeLocked-SZJhTy .content-3at_AU .children-Bmpf2Q {
+    display: none;
+}
+
+.containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS {
+    text-transform: capitalize;
+}
+
+.containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS::after {
+    content: ' channels';
 }
