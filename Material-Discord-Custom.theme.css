@@ -1,8 +1,8 @@
-//META{"name":"Material_Discord_Custom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.3"}*//{}
+//META{"name":"Material_Discord_Custom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.3.1"}*//{}
 
 /** Material Discord by CapnKitten **/
 
-@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.3);
+@import url(https://capnkitten.github.io/BetterDiscord/Material-Discord/css/source.css?v=2.3.1);
 
 /** General **/
 
@@ -418,4 +418,21 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS::after {
     content: ' channels';
+}
+
+/** Fix Members list background **/
+
+.members-1998pB,
+.members-1998pB>div {
+    background: transparent;
+}
+
+/** Hide scrollbar in guilds list **/
+
+.wrapper-1Rf91z .scroller-2TZvBN::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper-1Rf91z .scroller-2TZvBN:hover::-webkit-scrollbar {
+    display: block;
 }
