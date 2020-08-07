@@ -337,3 +337,22 @@
 .headerSpotify-zpWxgT .nameTag-m8r81H .discriminator-19kRMP {
     color: inherit !important;
 }
+
+/** Potentially better border radius masker in multi-messages **/
+
+.message-2qnXI6:not(.groupStart-23k01U):before,
+.message-2qnXI6:not(.groupStart-23k01U):after {
+    top: 3px;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.message-2qnXI6:not(.groupStart-23k01U):before {
+    border-width: 14px 0 0 6px;
+    border-left-color: var(--message-color);
+}
+
+.message-2qnXI6:not(.groupStart-23k01U):after {
+    border-width: 0 0 14px 6px;
+    border-bottom-color: var(--message-color);
+}
