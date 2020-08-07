@@ -331,12 +331,6 @@
     color: inherit !important;
 }
 
-/** Message input right buttons (nitro gift, GIF and emojis) **/
-
-.webkit-HjD9Er .buttons-3JBrkn {
-    margin-right: 3px;
-}
-
 /** BetterRoleColors override - uncolor names in Spotify member card modals **/
 
 .headerSpotify-zpWxgT .nameTag-m8r81H .username-2b1r56,
