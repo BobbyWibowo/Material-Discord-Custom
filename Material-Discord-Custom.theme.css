@@ -39,42 +39,6 @@
     display: none !important;
 }
 
-/** Magane **/
-
-/* Enable overflow on channel text area */
-.channelTextArea-rNsIhG > .scrollableContainer-2NUZem {
-    overflow: visible;
-}
-
-div.channel-textarea-stickers[data-v-377ce45c] {
-    opacity: 1 !important;
-    transform: none !important;
-}
-
-div.channel-textarea-stickers-content[data-v-377ce45c] {
-    margin-top: 7px !important;
-}
-
-div.stickerWindow[data-v-377ce45c] {
-    background: var(--popout-alt) !important;
-    animation: bottom-pop-out 400ms var(--default-animation) !important;
-    right: -118px !important;
-    bottom: 76px !important;
-    box-shadow: var(--shadow-3dp) !important;
-}
-
-div.stickerWindow>div.packs[data-v-377ce45c] {
-    background: rgba(0,0,0,0.25) !important;
-}
-
-div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
-    margin: 4px !important;
-}
-
-.innerDisabled-2mc-iF div#magane {
-    display: none !important;
-}
-
 /** Radial Status **/
 
 [role="img"][aria-label]:before {
@@ -152,81 +116,6 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
     clip-path: circle(50% at 50% 50%);
 }
 
-/** TODO: Guilds list **/
-
-/*
-.listItem-2P_4kh.bd-selected,
-.pill-2uzAFe.bd-selected {
-    background: none !important;
-}
-
-.listItem-2P_4kh .pill-31IEus .item-2hkk8m {
-    opacity: 1 !important;
-}
-
-.listItem-2P_4kh .pill-1m5BUr .item-2hkk8m,
-.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m,
-.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8m,
-.listItem-2P_4kh .pill-1m5BUr.bd-unread .item-2hkk8m,
-.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m {
-    height: 8px !important;
-    width: 4px;
-    top: unset;
-    right: unset;
-    left: 0;
-    margin: initial;
-    background: var(--header-primary);
-    border-radius: 0 4px 4px 0 !important;
-    box-shadow: none;
-    z-index: 0;
-    transform: none !important;
-    pointer-events: none;
-}
-
-.wrapper-21YSNc .listItem-2P_4kh {
-    width: 100%;
-}
-
-.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .svg-1X37T1,
-.folderIconWrapper-226oVY {
-    border-radius: var(--border-radius) !important;
-}
-
-.expandedGuilds-1JMD4M .listItem-2P_4kh .pill-31IEus .item-2hkk8m,
-.expandedGuilds-1JMD4M .listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m {
-    top: unset;
-    right: unset;
-    left: 1px
-}
-
-.expandedFolderBackground-2sPsd- {
-    width: 100%;
-    left: unset;
-    border-radius: 0;
-}
-
-.wrapper-21YSNc .expandedFolderBackground-2sPsd-:not(.collapsed-1GMuSb) + .listItem-2P_4kh {
-    margin: 0 auto;
-}
-
-.expandedGuilds-1JMD4M,
-.expandedGuilds-1JMD4M .listItem-2P_4kh {
-    width: 100%;
-}
-
-.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 20px"],
-.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 20px"],
-.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*="height: 20px"] {
-    height: 20px !important;
-}
-
-.listItem-2P_4kh.bd-unread .pill-31IEus .item-2hkk8m[style*="height: 40px"],
-.listItem-2P_4kh.bd-unread .pill-1m5BUr .item-2hkk8mp[style*="height: 40px"],
-.wrapper-21YSNc .expandedFolderBackground-2sPsd- + .listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*="height: 40px"] {
-    height: 40px !important;
-}
-*/
-
 /** Spotify **/
 
 .topSectionSpotify-1lI0-P .assetsLargeImageProfile-3YXDex,
@@ -241,114 +130,113 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 /** Badges in Playing profiles **/
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeStaff-13GO7z,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeStaff-13GO7z {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeStaff-13GO7z {
     background-image: url(/assets/4358ad1fb423b346324516453750f569.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgePartner-SjK6L2,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgePartner-SjK6L2 {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgePartner-SjK6L2 {
     background-image: url(/assets/33fedf082addb91d88abc272b4b18daa.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypesquad-1YIe7Z,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypesquad-1YIe7Z {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypesquad-1YIe7Z {
     background-image: url(/assets/6c73f47daf179ffade99f501bfc5101b.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse1-xN6tES,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse1-xN6tES {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse1-xN6tES {
     background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse2-3jBpXR,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
     background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse3-1YbjMX,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
     background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6 {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6 {
     background-image: url(/assets/26a2dc8c9d70955a988cb377eec84c22.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm {
     background-image: url(/assets/88d4f11bee9ea34fee59973b33353da0.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeHypeSquadOnlineHouse3Winner-2iVu11,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeHypeSquadOnlineHouse3Winner-2iVu11 {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeHypeSquadOnlineHouse3Winner-2iVu11 {
     background-image: url(/assets/3245b2cd85b787b195ea8f6e10ef5790.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeEarlySupporter-PQB_0a,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeEarlySupporter-PQB_0a {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeEarlySupporter-PQB_0a {
     background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgePremium-3kZ9Qj,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgePremium-3kZ9Qj {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgePremium-3kZ9Qj {
     background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileBadgeBugHunter-IV0vLE,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileBadgeBugHunter-IV0vLE {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileBadgeBugHunter-IV0vLE {
     background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl1-pKd1EZ,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl1-pKd1EZ {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl1-pKd1EZ {
     background-image: url(/assets/fbb6f1e160280f0e9aeb5d7c452eefe1.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl2-1aIFve,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl2-1aIFve {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl2-1aIFve {
     background-image: url(/assets/b4b741bef6c3de9b29e2e0653e294620.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl3-33AROf,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl3-33AROf {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl3-33AROf {
     background-image: url(/assets/93f5a393e22796a850931483166d7cb9.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl4-2yY8EG,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl4-2yY8EG {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl4-2yY8EG {
     background-image: url(/assets/4c380650960c2b1e1584115d5e9ad63b.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl5-1mIKQ8,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl5-1mIKQ8 {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl5-1mIKQ8 {
     background-image: url(/assets/438dd7ecbffcf21b6cbf2773ade51a04.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl6-2tCBLE,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl6-2tCBLE {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl6-2tCBLE {
     background-image: url(/assets/7a5f78de816fcecbbd1d5d6e635cc7dd.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl7-3M0RQX,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl7-3M0RQX {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl7-3M0RQX {
     background-image: url(/assets/5a24b20b84fb3eafc138916729386e76.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl8-2ot52H,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl8-2ot52H {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl8-2ot52H {
     background-image: url(/assets/f31d590e1f3629cd0b614330f4a8ee2a.svg);
 }
 
 .topSectionPlaying-1J5E4n .profileBadgeWrapper-rl_RO6 .profileGuildSubscriberlvl9-1qrrRa,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .profileGuildSubscriberlvl9-1qrrRa {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .profileGuildSubscriberlvl9-1qrrRa {
     background-image: url(/assets/9ba64f1fa91ccde0eba506c1c33f3d1a.svg);
 }
 
 /** Current guild booster **/
 
-.topSectionNormal-2-vo2m .BE-badge-CurrentGuildBoost,
-.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n > .BE-badge-CurrentGuildBoost {
+.header-2BwW8b:not(.headerSpotify-zpWxgT) .topSectionPlaying-1J5E4n .badge-7CsdQq.indicator-cY1-b4 {
     color: #FF73FA !important;
     margin-left: 2px !important;
 }
@@ -435,4 +323,23 @@ div.stickerWindow div.stickers>div.pack div.sticker[data-v-377ce45c] {
 
 .wrapper-1Rf91z .scroller-2TZvBN:hover::-webkit-scrollbar {
     display: block;
+}
+
+/** Fix Nitro Switch Plans button in Home > Nitro sidebar menu **/
+
+.lookInverted-2D7oAl.colorBrand-3pXr91 .contents-18-Yxp {
+    color: inherit !important;
+}
+
+/** Message input right buttons (nitro gift, GIF and emojis) **/
+
+.webkit-HjD9Er .buttons-3JBrkn {
+    margin-right: 3px;
+}
+
+/** BetterRoleColors override - uncolor names in Spotify member card modals **/
+
+.headerSpotify-zpWxgT .nameTag-m8r81H .username-2b1r56,
+.headerSpotify-zpWxgT .nameTag-m8r81H .discriminator-19kRMP {
+    color: inherit !important;
 }
