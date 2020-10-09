@@ -360,20 +360,20 @@
 /** Magane - https://github.com/BobbyWibowo/Magane **/
 
 div#magane div.stickerWindow {
-    background-color: var(--popout-alt);
-    border-radius: var(--border-radius-big);
-    box-shadow: var(--shadow-3dp);
-    right: 256px;
-    bottom: 66px;
+    background-color: var(--popout-alt) !important;
+    border-radius: var(--border-radius-big) !important;
+    box-shadow: var(--shadow-3dp) !important;
+    right: 256px !important;
+    bottom: 66px !important;
     animation: bottom-pop-out 400ms var(--default-animation) !important;
 }
 
 div#magane div.stickerWindow div.stickers div.pack span {
-    font-weight: bold;
-    font-variant-caps: small-caps;
+    font-weight: bold !important;
+    font-variant-caps: small-caps !important;
 }
 
 div#magane .button {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
 }
