@@ -377,3 +377,9 @@ div#magane .button {
     font-weight: bold !important;
     text-transform: uppercase !important;
 }
+
+div#magane div.channel-textarea-stickers {
+    width: 24px !important;
+    position: relative !important;
+    right: -6px !important;
+}
