@@ -39,7 +39,7 @@
     display: none !important;
 }
 
-/** Radial Status **/
+/** Radial Status plugin **/
 
 [role="img"][aria-label]:before {
     content: "";
@@ -127,7 +127,7 @@
     padding: 20px !important;
 }
 
-/** Badges Everywhere - force colored, except in Spotify **/
+/** Badges Everywhere plugin: force colored, except in Spotify **/
 
 .cozy-3raOZG .username-1A8OIy + [class*="badges-"] {
     margin-left: 5px !important;
@@ -272,13 +272,13 @@
     display: none !important;
 }
 
-/** Read All Notifications Button **/
+/** Read All Notifications Button plugin **/
 
 .childWrapper-anI2G9[style="height: 20px;"] {
     background: none !important;
 }
 
-/** Member Permissions **/
+/** Permissions plugin: member cards **/
 
 .member-perm {
     position: relative;
@@ -297,7 +297,7 @@
     position: absolute;
 }
 
-/** Show Hidden Channels support **/
+/** Show Hidden Channels plugin **/
 
 .modeLocked-SZJhTy .content-3at_AU svg path:nth-child(2),
 .modeLocked-SZJhTy .content-3at_AU .children-Bmpf2Q {
@@ -361,7 +361,7 @@
     border-bottom-color: var(--message-color);
 }
 
-/** Magane - https://github.com/BobbyWibowo/Magane **/
+/** Magane plugin: https://github.com/BobbyWibowo/Magane **/
 
 div#magane div.stickerWindow {
     background-color: var(--popout-alt) !important;
@@ -386,4 +386,25 @@ div#magane div.channel-textarea-stickers {
     width: 24px !important;
     position: relative !important;
     right: -6px !important;
+}
+
+/** Send Button plugin **/
+
+.buttonContainer-28fw2U.send-button .buttonWrapper-1ZmCpA {
+    margin-left: 2px;
+    width: 28px;
+    justify-content: flex-start;
+}
+
+/** Google translate plugin **/
+
+.translateButton-DhP9x8 {
+    position: relative;
+    left: 2px;
+}
+
+/** Server Counter plugin **/
+
+.tutorialContainer-1v44GL + .listItem-2P_4kh, #bd-pub-li + .listItem-2P_4kh {
+    height: auto !important;
 }
