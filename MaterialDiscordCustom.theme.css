@@ -60,10 +60,15 @@
     clip-path: circle(50% at 50% 50%);
 }
 
-/** Fix Spotify progress bar in User Cards **/
+/** Spotify in User Cards: fix progress bar and other tweaks **/
 
 [class*="topSectionSpotify-"] [class*="timeBarProfile-"] {
   top: 124px !important;
+}
+
+[class*="topSectionSpotify-"] [class*="activityProfile-"] [class*="content-"],
+[class*="topSectionSpotify-"] [class*="activityProfile-"] [class*="listeningActionsProfile-"] {
+  margin-top: 0;
 }
 
 /** Role Members **/
