@@ -1,0 +1,411 @@
+//META{"name":"MaterialDiscordCustom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.3.3.7"}*//{}
+
+/** Material Discord by CapnKitten - v2.3.3.7 (03/10/2020) **/
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=2.3.3.7);
+
+/** General **/
+
+:root {
+    --accent-color: #4285f4 !important;
+    --accent-color-hover: #3b5074 !important;
+    --accent-color-active: #3daee9 !important;
+    --accent-rgb: rgba(66, 133, 244, 0.3) !important;
+}
+
+/** Fonts **/
+
+* {
+    font-family: Ubuntu, sans-serif !important;
+}
+
+.markup-2BOw-j pre,
+.markup-2BOw-j pre *,
+.markup-2BOw-j pre code,
+.markup-2BOw-j pre code *,
+.markup-2BOw-j code.inline,
+.ace_editor:before {
+    font-family: 'Operator Mono', monospace !important;
+}
+
+/** Custom CSS Editor **/
+
+.ace_editor {
+    margin-top: 0 !important;
+}
+
+.nameTag-3uD-yy .subtext-3CDbHg,
+.ace_editor:before {
+    display: none !important;
+}
+
+/** Friends/People list **/
+
+.peopleListItem-2nzedh .avatar-3W3CeO {
+    margin: 3px 12px 0 3px;
+}
+
+.peopleListItem-2nzedh .text-37NqbO {
+    margin-top: 3px;
+}
+
+/** Apply mask to avatars on messages **/
+
+.message-2qnXI6 .mask-1l8v16 foreignObject {
+    mask: url(#svg-mask-avatar-status-round-40) !important;
+}
+
+.message-2qnXI6 .mask-1l8v16 rect {
+    mask: none;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/** Fix Spotify progress bar in User Cards **/
+
+[class*="topSectionSpotify-"] [class*="timeBarProfile-"] {
+  top: 124px !important;
+}
+
+/** Role Members **/
+
+.popoutList-T9CKZQ .selectableItem-1MP3MQ .image-33JSyf.small-5Os1Bb {
+    background-size: contain;
+    border-radius: 100%;
+}
+
+/** Avatar in Member Cards **/
+
+.root-SR8cQa .avatar-3EQepX,
+.root-SR8cQa .avatar-3EQepX:before,
+.root-SR8cQa .avatar-3EQepX foreignObject img {
+    border-radius: var(--border-radius);
+}
+
+/** Restore border radius in Rich Presence large assets **/
+
+.assetsLargeImage-eYwpTX {
+    border-radius: 4px !important;
+}
+
+/** Disable Streaming badge on Guild icons **/
+
+.iconBadge-2NuvG9 {
+    display: none !important;
+}
+
+/** Fix Nitro Switch Plans button in Home > Nitro sidebar menu **/
+
+.lookInverted-2D7oAl.colorBrand-3pXr91 .contents-18-Yxp {
+    color: inherit !important;
+}
+
+/** Potentially better border radius masker in multi-messages **/
+
+.message-2qnXI6:not(.groupStart-23k01U):before,
+.message-2qnXI6:not(.groupStart-23k01U):after {
+    top: 3px;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.message-2qnXI6:not(.groupStart-23k01U):before {
+    border-width: 14px 0 0 6px;
+    border-left-color: var(--message-color);
+}
+
+.message-2qnXI6:not(.groupStart-23k01U):after {
+    border-width: 0 0 14px 6px;
+    border-bottom-color: var(--message-color);
+}
+
+/** Roles in Member Cards **/
+
+.userPopout-3XzG_A .role-2irmRk,
+.member-1q7VfX .role-2irmRk {
+  min-width: 24px;
+  height: 24px;
+}
+
+.userPopout-3XzG_A .role-2irmRk button,
+.userPopout-3XzG_A .roleCircle-3xAZ1j,
+.userPopout-3XzG_A .roleCircleButton-377y0l,
+.member-1q7VfX .role-2irmRk button,
+.member-1q7VfX .roleCircle-3xAZ1j,
+.member-1q7VfX .roleCircleButton-377y0l {
+  width: 24px;
+  height: 24px;
+}
+
+/** Permissions plugin: Member Cards **/
+
+.member-perms .member-perm {
+  position: relative;
+  min-width: 16px;
+  height: 16px;
+  padding: 0;
+  border-radius: 16px;
+  border: none;
+  background: var(--popout-color);
+  transition: 200ms ease;
+  font-size: 11px;
+}
+
+.member-perms .member-perm .perm-circle {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.member-perms .member-perm .name {
+  color: inherit;
+  margin: 0 4px 0 2px;
+}
+
+/** Radial Status plugin **/
+
+[role="img"][aria-label]:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 2px #666;
+  border-radius: 50%;
+  z-index: 20;
+  border: none !important;
+}
+
+.friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm {
+  padding-left: 15px;
+}
+
+[role="img"][aria-label] foreignObject {
+  mask: none;
+}
+
+[role="img"][aria-label] foreignObject img {
+  border-radius: 50%;
+}
+
+[role="img"][aria-label] svg rect {
+  display: none;
+}
+
+[role="img"][aria-label*="Online"]:before {
+  box-shadow: 0 0 0 2.25px #32a852;
+}
+
+[role="img"][aria-label*="Online via mobile"]:before {
+  box-shadow: 0 0 0 2.25px #4285f4;
+}
+
+[role="img"][aria-label*="Do Not Disturb"]:before {
+  box-shadow: 0 0 0 2.25px #cc0000;
+}
+
+[role="img"][aria-label*="Idle"]:before {
+  box-shadow: 0 0 0 2.25px #faa61a;
+}
+
+[role="img"][aria-label*="Streaming"]:before {
+  box-shadow: 0 0 0 2.25px #6441a5;
+}
+
+[role="img"][aria-label*="Offline"]:before {
+  box-shadow: 0 0 0 2.25px #4d4d4d;
+}
+
+[role="img"][aria-label*="Invisible"]:before {
+  box-shadow: 0 0 0 2.25px #4d4d4d;
+}
+
+/** Read All Notifications Button plugin **/
+
+.childWrapper-anI2G9[style="height: 20px;"] {
+  background: none !important;
+}
+
+/** Show Hidden Channels plugin **/
+
+.modeLocked-SZJhTy .content-3at_AU svg path:nth-child(2),
+.modeLocked-SZJhTy .content-3at_AU .children-Bmpf2Q {
+    display: none;
+}
+
+.containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS {
+    text-transform: capitalize;
+}
+
+.containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS::after {
+    content: ' channels';
+}
+
+/** BetterRoleColors plugin: uncolor names in Member Cards when playing Spotify **/
+
+.headerSpotify-zpWxgT .nameTag-m8r81H .username-2b1r56,
+.headerSpotify-zpWxgT .nameTag-m8r81H .discriminator-19kRMP {
+    color: inherit !important;
+}
+
+/** Send Button plugin **/
+
+.buttonContainer-28fw2U.send-button .buttonWrapper-1ZmCpA {
+    margin-left: 2px;
+    width: 28px;
+    justify-content: flex-start;
+}
+
+/** Google Translate plugin **/
+
+.translateButton-DhP9x8 {
+    position: relative;
+    left: 2px;
+}
+
+/** Server Counter plugin **/
+
+.tutorialContainer-1v44GL + .listItem-2P_4kh, #bd-pub-li + .listItem-2P_4kh {
+    height: auto !important;
+}
+
+/** Badges Everywhere plugin: tweaks and force colored in Member and User Cards (except when playing Spotify) **/
+
+.cozy-3raOZG .username-1A8OIy + {
+  margin-left: 5px !important;
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeStaff-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeStaff-"] {
+  background-image: url(/assets/4358ad1fb423b346324516453750f569.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgePartner-"],
+[class*="topSectionPlaying-"] [class*="profileBadgePartner-"] {
+  background-image: url(/assets/33fedf082addb91d88abc272b4b18daa.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypesquad-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypesquad-"] {
+  background-image: url(/assets/6c73f47daf179ffade99f501bfc5101b.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse1-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse1-"] {
+  background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse2-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse2-"] {
+  background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse3-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse3-"] {
+  background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse1Winner-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse1Winner-"] {
+  background-image: url(/assets/26a2dc8c9d70955a988cb377eec84c22.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse2Winner-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse2Winner-"] {
+  background-image: url(/assets/88d4f11bee9ea34fee59973b33353da0.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeHypeSquadOnlineHouse3Winner-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeHypeSquadOnlineHouse3Winner-"] {
+  background-image: url(/assets/3245b2cd85b787b195ea8f6e10ef5790.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeEarlySupporter-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeEarlySupporter-"] {
+  background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgePremium-"],
+[class*="topSectionPlaying-"] [class*="profileBadgePremium-"] {
+  background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileBadgeBugHunter-"],
+[class*="topSectionPlaying-"] [class*="profileBadgeBugHunter-"] {
+  background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl1-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl1-"] {
+  background-image: url(/assets/fbb6f1e160280f0e9aeb5d7c452eefe1.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl2-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl2-"] {
+  background-image: url(/assets/b4b741bef6c3de9b29e2e0653e294620.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl3-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl3-"] {
+  background-image: url(/assets/93f5a393e22796a850931483166d7cb9.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl4-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl4-"] {
+  background-image: url(/assets/4c380650960c2b1e1584115d5e9ad63b.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl5-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl5-"] {
+  background-image: url(/assets/438dd7ecbffcf21b6cbf2773ade51a04.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl6-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl6-"] {
+  background-image: url(/assets/7a5f78de816fcecbbd1d5d6e635cc7dd.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl7-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl7-"] {
+  background-image: url(/assets/5a24b20b84fb3eafc138916729386e76.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl8-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl8-"] {
+  background-image: url(/assets/f31d590e1f3629cd0b614330f4a8ee2a.svg);
+}
+
+.header-2BwW8b:not([class*="headerSpotify-"]) [class*="profileGuildSubscriberlvl9-"],
+[class*="topSectionPlaying-"] [class*="profileGuildSubscriberlvl9-"] {
+  background-image: url(/assets/9ba64f1fa91ccde0eba506c1c33f3d1a.svg);
+}
+
+.badge-7CsdQq.indicator-cY1-b4 {
+  color: #FF73FA !important;
+  position: relative !important;
+  top: 1px !important;
+}
+
+/** Magane plugin: https://github.com/BobbyWibowo/Magane **/
+
+div#magane div.stickerWindow {
+  background-color: var(--popout-alt) !important;
+  border-radius: var(--border-radius-big) !important;
+  box-shadow: var(--shadow-3dp) !important;
+  right: 256px !important;
+  bottom: 66px !important;
+  animation: bottom-pop-out 400ms var(--default-animation) !important;
+}
+
+div#magane div.stickerWindow div.stickers div.pack span {
+  font-weight: bold !important;
+  font-variant-caps: small-caps !important;
+}
+
+div#magane .button {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+div#magane div.channel-textarea-stickers {
+  width: 24px !important;
+  position: relative !important;
+  right: -6px !important;
+}
