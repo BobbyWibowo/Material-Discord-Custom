@@ -1,8 +1,8 @@
-//META{"name":"MaterialDiscordCustom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.3.3.7"}*//{}
+//META{"name":"MaterialDiscordCustom","description":"A theme based on Google's Material Design","author":"CapnKitten","version":"2.3.3.8"}*//{}
 
-/** Material Discord by CapnKitten - v2.3.3.7 (03/10/2020) **/
+/** Material Discord by CapnKitten - v2.3.3.8 (02/11/2020) **/
 
-@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=2.3.3.7);
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=2.3.3.8);
 
 /** General **/
 
@@ -102,25 +102,6 @@
 
 .lookInverted-2D7oAl.colorBrand-3pXr91 .contents-18-Yxp {
     color: inherit !important;
-}
-
-/** Potentially better border radius masker in multi-messages **/
-
-.message-2qnXI6:not(.groupStart-23k01U):before,
-.message-2qnXI6:not(.groupStart-23k01U):after {
-    top: 3px;
-    transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-}
-
-.message-2qnXI6:not(.groupStart-23k01U):before {
-    border-width: 14px 0 0 6px;
-    border-left-color: var(--message-color);
-}
-
-.message-2qnXI6:not(.groupStart-23k01U):after {
-    border-width: 0 0 14px 6px;
-    border-bottom-color: var(--message-color);
 }
 
 /** Roles in Member Cards **/
