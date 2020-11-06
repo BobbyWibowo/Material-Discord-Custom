@@ -135,6 +135,24 @@
   box-shadow:0 1px 1px rgba(255, 255, 255, .07) inset;
 }
 
+/** Temporary fix for notification pills in Guilds list **/
+
+.listItem-2P_4kh .item-2hkk8m {
+  position: absolute;
+  display: block;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 100%;
+  background-color: #B9BBBE;
+  top: 5px;
+  right: 5px;
+  box-shadow: var(--shadow-1dp);
+}
+
+.listItem-2P_4kh .item-2hkk8m:not([style*="height: 8px"]) {
+  background-color: #FFFFFF;
+}
+
 /** Permissions plugin: Member Cards **/
 
 .member-perms .member-perm {
