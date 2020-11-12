@@ -118,6 +118,12 @@
   height: 24px;
 }
 
+/** Fix channels list background color **/
+
+.container-3w7J-x {
+  background: none;
+}
+
 /** Background patterns in Member and User Cards: https://github.com/rauenzi/Nox **/
 
 .root-SR8cQa .topSectionPlaying-1J5E4n,
