@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/BobbyWibowo/Material-Discord-Custom/issues"
   },
-  "author": "Bobby Wibowo <bobbywibowo98@gmail.com>",
+  "author": "Bobby Wibowo <bobby@fiery.me>",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -33,11 +33,13 @@
     "fibers": "~5.0.0",
     "gulp": "~4.0.2",
     "gulp-cli": "~2.3.0",
+    "gulp-connect": "~5.7.0",
     "gulp-dart-sass": "~1.0.2",
     "gulp-eslint7": "~0.3.0",
     "gulp-if": "~3.0.0",
     "gulp-nodemon": "~2.5.0",
     "gulp-postcss": "~9.0.0",
+    "gulp-run": "~1.7.1",
     "gulp-sourcemaps": "~3.0.0",
     "gulp-stylelint": "~13.0.0",
     "postcss": "~8.1.8",

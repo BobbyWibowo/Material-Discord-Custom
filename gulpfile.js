@@ -2,9 +2,11 @@ const gulp = require('gulp')
 const cssnano = require('cssnano')
 const del = require('del')
 const Fiber = require('fibers')
+const connect = require('gulp-connect')
 const eslint = require('gulp-eslint7')
 const postcss = require('gulp-postcss')
 const postcssPresetEnv = require('postcss-preset-env')
+const run = require('gulp-run')
 const sass = require('gulp-dart-sass')
 const sassCompiler = require('sass')
 const sourcemaps = require('gulp-sourcemaps')
@@ -120,6 +122,24 @@ gulp.task('watch:themes', () => {
   return gulp.watch('themes/**/*.scss', gulp.series('clean:themes', 'build:themes'))
 })
 
+gulp.task('touch', () => {
+  return run(`/usr/bin/touch "${process.env.BD_PLUGIN_PATH}"`).exec()
+})
+
+gulp.task('connect', () => {
+  const root = process.env.NODE_ENV === 'development'
+    ? 'dist-dev'
+    : 'dist'
+  connect.server({
+    root,
+    port: 10002,
+    livereload: false
+  }, () => {
+    (gulp.series('touch'))()
+    gulp.watch(dist, gulp.series('touch'))
+  })
+})
+
 gulp.task('watch:all', gulp.parallel('watch:src', 'watch:themes'))
 
-gulp.task('watch', gulp.series('clean', 'build', gulp.parallel('watch:all')))
+gulp.task('watch', gulp.series('clean', 'build', gulp.parallel('watch:all', 'connect')))
