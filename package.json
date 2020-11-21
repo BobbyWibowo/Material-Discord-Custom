@@ -1,7 +1,7 @@
 {
-  "name": "Materia-Discord-Custom",
+  "name": "material-discord-custom",
   "version": "1.0.0",
-  "description": "Material design theme for Discord",
+  "description": "Material design theme for Discord with modular fixes/tweaks/changes",
   "repository": {
     "type": "git",
     "url": "https://github.com/CapnKitten/Material-Discord-Custom"
