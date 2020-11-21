@@ -2,15 +2,17 @@
 
 /** Show Hidden Channels plugin **/
 
-.modeLocked-SZJhTy .content-3at_AU svg path:nth-child(2),
-.modeLocked-SZJhTy .content-3at_AU .children-Bmpf2Q {
-  display: none
+.modeLocked-SZJhTy .content-3at_AU {
+  svg path:nth-child(2),
+  .children-Bmpf2Q {
+    display: none
+  }
 }
 
 .containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS {
-  text-transform: capitalize
-}
+  text-transform: capitalize;
 
-.containerDefault-3GGEv_ .wrapper-CU3qI5[data-ref-id="channels--1"] .name-IbjUBS::after {
-  content: ' channels'
+  &::after {
+    content: ' channels'
+  }
 }

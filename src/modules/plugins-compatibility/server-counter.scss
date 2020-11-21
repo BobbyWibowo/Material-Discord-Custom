@@ -2,7 +2,9 @@
 
 /** Server Counter plugin **/
 
-.tutorialContainer-1v44GL + .listItem-2P_4kh,
-#bd-pub-li + .listItem-2P_4kh {
-  height: auto !important
+#bd-pub-li,
+.tutorialContainer-1v44GL {
+  & + .listItem-2P_4kh {
+    height: auto !important
+  }
 }

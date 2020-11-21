@@ -7,3 +7,23 @@
   width: 28px;
   justify-content: flex-start
 }
+
+.message-2qnXI6 .send-button {
+  display: none
+}
+
+.send-button {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDBWMHoiLz48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNNC4wMSA2LjAzbDcuNTEgMy4yMi03LjUyLTEgLjAxLTIuMjJtNy41IDguNzJMNCAxNy45N3YtMi4yMmw3LjUxLTFNMi4wMSAzTDIgMTBsMTUgMi0xNSAyIC4wMSA3TDIzIDEyIDIuMDEgM3oiLz48L3N2Zz4=);
+  opacity: 0.4;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transition: 250ms ease all;
+
+  &:hover {
+    opacity: 1
+  }
+
+  .contents-18-Yxp {
+    display: none
+  }
+}
