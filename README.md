@@ -6,7 +6,7 @@ Material design theme for Discord with modular fixes/tweaks/changes.
 
 ### Material-Discord-Custom.theme.css
 
-This one contains all fixes, custom changes and plugin compatibilities.
+This one contains all fixes, tweaks, custom changes, and plugin compatibilities.
 
 This remotely loads [CapnKitten/Material-Discord](https://github.com/CapnKitten/Material-Discord) and `src/source.scss` (built files in `dist`).
 
