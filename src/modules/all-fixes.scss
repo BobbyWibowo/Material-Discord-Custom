@@ -12,7 +12,9 @@
 
 .topSectionSpotify-1lI0-P .activityProfile-2bJRaP {
   .timeBarProfile-10b-fm {
-    top: 124px !important
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 20px !important
   }
 
   .content-3JfFJh,
@@ -22,12 +24,12 @@
 }
 
 .headerSpotify-zpWxgT {
-  .activity-11LB_k {
-    padding: 12px !important
+  .bodyNormal-2D39hT {
+    padding: 12px 12px 0 !important
   }
 
-  .bodyNormal-2D39hT {
-    padding: 0 !important
+  .buttonsWrapper-2spIeK {
+    padding: 0 12px 12px !important
   }
 }
 
