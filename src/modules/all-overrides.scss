@@ -1,28 +1,20 @@
 @charset "utf-8";
 
-/** Variables **/
-
-$accentColor: #4285f4;
-$accentColorHover: #3b5074;
-$accentColorActive: #3daee9;
-$accentRgb: rgba(66, 133, 244, 0.3);
-
-$fontFamily: ubuntu, sans-serif;
-$fontFamilyMonospace: 'Operator Mono', monospace;
+@import "_variables";
 
 /** General **/
 
 :root {
-  --accent-color: $accentColor !important;
-  --accent-color-hover: $accentColorHover !important;
-  --accent-color-active: $accentcolorActive !important;
-  --accent-rgb: $accentRgb !important
+  --accent-color: #{$accent-color} !important;
+  --accent-color-hover: #{$accent-color-hover} !important;
+  --accent-color-active: #{$accent-color-active} !important;
+  --accent-rgb: #{$accent-rgb} !important
 }
 
 /** Fonts **/
 
 * {
-  font-family: $fontFamily !important
+  font-family: $font-family !important
 }
 
 .markup-2BOw-j {
@@ -31,10 +23,10 @@ $fontFamilyMonospace: 'Operator Mono', monospace;
   pre code,
   pre code *,
   code.inline {
-    font-family: $fontFamilyMonospace !important
+    font-family: $font-family-monospace !important
   }
 }
 
 .ace_editor::before {
-  font-family: $fontFamilyMonospace !important
+  font-family: $font-family-monospace !important
 }
