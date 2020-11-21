@@ -108,19 +108,7 @@ gulp.task('build:themes', function () {
 
 gulp.task('build', gulp.parallel('build:src', 'build:themes'))
 
-/** TASKS: VERSION STRINGS */
-
-/*
-gulp.task('exec:bump-versions', cb => {
-  exec('node ./scripts/bump-versions.js 1', (error, stdout, stderr) => {
-    if (stdout) process.stdout.write(stdout)
-    if (stderr) process.stderr.write(stderr)
-    cb(error)
-  })
-})
-*/
-
-gulp.task('default', gulp.series('lint', 'clean', 'build'/*, 'exec:bump-versions' */))
+gulp.task('default', gulp.series('lint', 'clean', 'build'))
 
 /** TASKS: WATCH (SKIP LINTER) */
 
@@ -128,10 +116,10 @@ gulp.task('watch:src', () => {
   return gulp.watch('src/**/*.scss', gulp.series('clean:src', 'build:src'))
 })
 
-gulp.task('watch:theme', () => {
-  return gulp.watch('themes/**/*.scss', gulp.series('clean:theme', 'build:theme'))
+gulp.task('watch:themes', () => {
+  return gulp.watch('themes/**/*.scss', gulp.series('clean:themes', 'build:themes'))
 })
 
-gulp.task('watch:all', gulp.parallel('watch:src', 'watch:theme'))
+gulp.task('watch:all', gulp.parallel('watch:src', 'watch:themes'))
 
 gulp.task('watch', gulp.series('clean', 'build', gulp.parallel('watch:all')))
