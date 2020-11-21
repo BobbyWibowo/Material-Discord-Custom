@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build and minify
+    name: Build and minify dist assets
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'AUTO: Rebuilt and minified assets'
+          commit_message: 'AUTO: Rebuilt and minified dist assets'
           commit_user_name: loli-bot
           commit_user_email: hi@fiery.me
         env:
