@@ -23,15 +23,18 @@ const postcssPlugins = [
 
 sass.compiler = sassCompiler
 
-// Minify on production
-if (process.env.NODE_ENV !== 'development') {
-  postcssPlugins.push(cssnano())
-}
-
 /** TASKS: LINT */
 
-gulp.task('lint:sass', () => {
+gulp.task('lint:src', () => {
   return gulp.src('./src/**/*.scss')
+    .pipe(stylelint({
+      failAfterError: true,
+      reporters: [{ formatter: 'string', console: true }]
+    }))
+})
+
+gulp.task('lint:themes', () => {
+  return gulp.src('./themes/**/*.scss')
     .pipe(stylelint({
       failAfterError: true,
       reporters: [{ formatter: 'string', console: true }]
@@ -49,15 +52,22 @@ gulp.task('lint:js', () => {
 // the other one won't exit prematurely (this is a bit awkward).
 // https://github.com/gulpjs/gulp/issues/1487#issuecomment-466621047
 gulp._settle = true
-gulp.task('lint', gulp.parallel('lint:sass', 'lint:js'))
+gulp.task('lint', gulp.parallel('lint:src', 'lint:themes', 'lint:js'))
 gulp._settle = false
 
 /** TASKS: CLEAN */
 
-gulp.task('clean:css', () => {
+gulp.task('clean:src', () => {
   return del([
-    `${dist}/**/*.css`,
-    `${dist}/**/*.css.map`
+    `${dist}/src/**/*.css`,
+    `${dist}/src/**/*.css.map`
+  ])
+})
+
+gulp.task('clean:themes', () => {
+  return del([
+    `${dist}/themes/**/*.css`,
+    `${dist}/themes/**/*.css.map`
   ])
 })
 
@@ -67,22 +77,36 @@ gulp.task('clean:rest', () => {
   ])
 })
 
-gulp.task('clean', gulp.parallel('clean:css', 'clean:rest'))
+gulp.task('clean', gulp.parallel('clean:src', 'clean:themes', 'clean:rest'))
 
 /** TASKS: BUILD */
 
-gulp.task('build:sass', function () {
+gulp.task('build:src', function () {
+  const _postcssPlugins = [...postcssPlugins]
+  // Minify on production
+  if (process.env.NODE_ENV !== 'development') {
+    _postcssPlugins.push(cssnano())
+  }
   return gulp.src('./src/**/*.scss', {
     ignore: '_*.scss'
   })
     .pipe(sourcemaps.init())
     .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
-    .pipe(postcss(postcssPlugins))
+    .pipe(postcss(_postcssPlugins))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(dist))
+    .pipe(gulp.dest(`${dist}/src`))
 })
 
-gulp.task('build', gulp.parallel('build:sass'))
+gulp.task('build:themes', function () {
+  return gulp.src('./themes/**/*.scss', {
+    ignore: '_*.scss'
+  })
+    .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
+    .pipe(postcss(postcssPlugins))
+    .pipe(gulp.dest(`${dist}/themes`))
+})
+
+gulp.task('build', gulp.parallel('build:src', 'build:themes'))
 
 /** TASKS: VERSION STRINGS */
 
@@ -100,10 +124,14 @@ gulp.task('default', gulp.series('lint', 'clean', 'build'/*, 'exec:bump-versions
 
 /** TASKS: WATCH (SKIP LINTER) */
 
-gulp.task('watch:css', () => {
-  return gulp.watch('src/**/*.scss', gulp.series('clean:css', 'build:sass'))
+gulp.task('watch:src', () => {
+  return gulp.watch('src/**/*.scss', gulp.series('clean:src', 'build:src'))
 })
 
-gulp.task('watch:src', gulp.parallel('watch:css'))
+gulp.task('watch:theme', () => {
+  return gulp.watch('themes/**/*.scss', gulp.series('clean:theme', 'build:theme'))
+})
 
-gulp.task('watch', gulp.series('clean', 'build', gulp.parallel('watch:src')))
+gulp.task('watch:all', gulp.parallel('watch:src', 'watch:theme'))
+
+gulp.task('watch', gulp.series('clean', 'build', gulp.parallel('watch:all')))

@@ -14,6 +14,12 @@
     "node": ">=10.0.0"
   },
   "license": "MIT",
+  "scripts": {
+    "lint": "gulp lint",
+    "build": "gulp default",
+    "watch": "gulp watch",
+    "develop": "env NODE_ENV=development yarn watch"
+  },
   "devDependencies": {
     "browserslist": "~4.14.7",
     "cssnano": "~4.1.10",
@@ -32,6 +38,7 @@
     "gulp-if": "~3.0.0",
     "gulp-nodemon": "~2.5.0",
     "gulp-postcss": "~9.0.0",
+    "gulp-replace": "~1.0.0",
     "gulp-sourcemaps": "~3.0.0",
     "gulp-stylelint": "~13.0.0",
     "postcss": "~8.1.8",
