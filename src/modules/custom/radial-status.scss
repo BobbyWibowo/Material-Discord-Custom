@@ -48,7 +48,7 @@ $box-shadow-spread-radius-in-cards: 3px;
   }
 
   &[aria-label*="Do Not Disturb"]::before {
-    box-shadow: 0 0 0 $box-shadow-spread-radius $offline
+    box-shadow: 0 0 0 $box-shadow-spread-radius $do-not-disturb
   }
 
   &[aria-label*="Idle"]::before {
