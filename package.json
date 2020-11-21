@@ -4,10 +4,10 @@
   "description": "Material design theme for Discord with modular fixes/tweaks/changes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CapnKitten/Material-Discord-Custom"
+    "url": "https://github.com/BobbyWibowo/Material-Discord-Custom"
   },
   "bugs": {
-    "url": "https://github.com/CapnKitten/Material-Discord-Custom/issues"
+    "url": "https://github.com/BobbyWibowo/Material-Discord-Custom/issues"
   },
   "author": "Bobby Wibowo <bobbywibowo98@gmail.com>",
   "engines": {
