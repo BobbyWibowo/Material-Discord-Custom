@@ -1,0 +1,26 @@
+/** Magane plugin **/
+
+div#magane div.stickerWindow {
+  background-color: var(--popout-alt) !important;
+  border-radius: var(--border-radius-big) !important;
+  box-shadow: var(--shadow-3dp) !important;
+  right: 256px !important;
+  bottom: 66px !important;
+  animation: bottom-pop-out 400ms var(--default-animation) !important
+}
+
+div#magane div.stickerWindow div.stickers div.pack span {
+  font-weight: bold !important;
+  font-variant-caps: small-caps !important
+}
+
+div#magane .button {
+  font-weight: bold !important;
+  text-transform: uppercase !important
+}
+
+div#magane div.channel-textarea-stickers {
+  width: 24px !important;
+  position: relative !important;
+  right: -6px !important
+}

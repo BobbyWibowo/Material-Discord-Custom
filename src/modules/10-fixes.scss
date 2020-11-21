@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/** Custom CSS Editor **/
+
+.ace_editor {
+  margin-top: 0 !important
+}
+
+/*
+.nameTag-3uD-yy .subtext-3CDbHg {
+  display: none !important
+}
+*/
+
+/** Friends/People list **/
+
+.peopleListItem-2nzedh {
+  .avatar-3W3CeO {
+    margin: 3px 12px 0 3px
+  }
+
+  .text-37NqbO {
+    margin-top: 3px
+  }
+}
+
+/** Apply mask to avatars on messages **/
+
+.message-2qnXI6 .mask-1l8v16 {
+  foreignObject {
+    mask: url(#svg-mask-avatar-status-round-40) !important
+  }
+
+  rect {
+    mask: none;
+    clip-path: circle(50% at 50% 50%)
+  }
+}
+
+/** Spotify in User Cards: tweaks **/
+
+.topSectionSpotify-1lI0-P .activityProfile-2bJRaP {
+  .content-3JfFJh,
+  .listeningActionsProfile-1fYwru {
+    margin-top: 0
+  }
+}
+
+/** Role Members **/
+
+.popoutList-T9CKZQ .selectableItem-1MP3MQ .image-33JSyf.small-5Os1Bb {
+  background-size: contain;
+  border-radius: 100%
+}
+
+/** Avatar in Member Cards **/
+
+.root-SR8cQa .avatar-3EQepX {
+  &,
+  &::before,
+  foreignObject img {
+    border-radius: var(--border-radius)
+  }
+}
+
+/** Restore border radius in Rich Presence large assets **/
+
+.assetsLargeImage-eYwpTX {
+  border-radius: 4px !important
+}
+
+/** Disable Streaming badge on Guild icons **/
+
+.iconBadge-2NuvG9 {
+  display: none !important
+}
+
+/** Fix Nitro Switch Plans button in Home > Nitro sidebar menu **/
+
+.lookInverted-2D7oAl.colorBrand-3pXr91 .contents-18-Yxp {
+  color: inherit !important
+}
+
+/** Roles in Member Cards **/
+
+.userPopout-3XzG_A,
+.member-1q7VfX {
+  .role-2irmRk {
+    min-width: 24px;
+    height: 24px
+  }
+}
+
+.userPopout-3XzG_A,
+.member-1q7VfX {
+  .role-2irmRk button,
+  .roleCircle-3xAZ1j,
+  .roleCircleButton-377y0l {
+    width: 24px;
+    height: 24px
+  }
+}

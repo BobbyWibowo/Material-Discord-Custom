@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import "_variables";
+
+/** General **/
+
+:root {
+  --accent-color: $accentColor !important;
+  --accent-color-hover: $accentColorHover !important;
+  --accent-color-active: $accentcolorActive !important;
+  --accent-rgb: $accentRgb !important
+}
+
+/** Fonts **/
+
+* {
+  font-family: $fontFamily !important
+}
+
+.markup-2BOw-j {
+  pre,
+  pre *,
+  pre code,
+  pre code *,
+  code.inline {
+    font-family: $fontFamilyMonospace !important
+  }
+}
+
+.ace_editor::before {
+  font-family: $fontFamilyMonospace !important
+}
