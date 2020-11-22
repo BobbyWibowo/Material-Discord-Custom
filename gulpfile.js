@@ -135,8 +135,10 @@ gulp.task('connect', () => {
     port: 10002,
     livereload: false
   }, () => {
-    (gulp.series('touch'))()
-    gulp.watch(dist, gulp.series('touch'))
+    if (process.env.BD_PLUGIN_PATH) {
+      (gulp.series('touch'))()
+      gulp.watch(dist, gulp.series('touch'))
+    }
   })
 })
 
