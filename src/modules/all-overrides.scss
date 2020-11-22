@@ -36,6 +36,7 @@ $font-family-monospace: 'Operator Mono', monospace;
   }
 }
 
-.ace_editor::before {
-  font-family: $font-family-monospace !important
+.contentColumnDefault-1VQkGM .ace_editor::before {
+  /* font-family: $font-family-monospace !important; */
+  display: none
 }
