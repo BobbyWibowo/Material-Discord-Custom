@@ -5,3 +5,44 @@
 .iconBadge-2NuvG9 {
   display: none !important
 }
+
+/** Message controls - simplified styling, and their positions now make more sense in multi-messages **/
+
+.message-2qnXI6 {
+  .buttonContainer-DHceWr {
+    right: -8px !important;
+
+    .buttons-cl5qTG {
+      transition: opacity 250ms var(--default-animation) !important;
+
+      &,
+      &:hover {
+        max-width: unset !important
+      }
+
+      .wrapper-2aW0bm {
+        box-shadow: none !important;
+        background: none !important;
+        border-radius: 0 !important;
+
+        .button-1ZiXG9 {
+          border-radius: 16px !important
+        }
+      }
+    }
+  }
+
+  &.groupStart-23k01U {
+    .buttonContainer-DHceWr {
+      top: 19px !important
+    }
+
+    .repliedMessage-VokQwo ~ .buttonContainer-DHceWr {
+      top: 41px !important
+    }
+  }
+
+  &:not(.groupStart-23k01U) .buttonContainer-DHceWr {
+    top: 28px !important
+  }
+}
