@@ -2,6 +2,10 @@
 
 /** BadgesEverywhere plugin **/
 
+.badgesChat-f_cbR8 {
+  top: 1px !important
+}
+
 /* Tweaks and force colored in Member and User Cards (except when playing Spotify) */
 .cozy-3raOZG .username-1A8OIy + {
   margin-left: 5px !important
@@ -102,4 +106,17 @@
   color: #ff73fa !important;
   position: relative !important;
   top: 1px !important
+}
+
+/* Message replies */
+
+.repliedMessage-VokQwo {
+  .badgesChat-f_cbR8 {
+    margin-left: 0 !important;
+    margin-right: 0.2rem
+  }
+
+  .repliedTextPreview-2NBljf {
+    margin-left: 0.2rem
+  }
 }
