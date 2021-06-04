@@ -56,13 +56,17 @@
   border-radius: 4px !important
 }
 
-/** Roles in Member Cards **/
+/** Roles in Member Popouts **/
 
 .userPopout-3XzG_A,
 .member-1q7VfX {
   .role-2irmRk {
     min-width: 24px;
-    height: 24px
+    height: 24px;
+
+    .roleCircle-3xAZ1j {
+      margin-left: 0
+    }
   }
 }
 
