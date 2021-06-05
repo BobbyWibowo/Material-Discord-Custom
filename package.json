@@ -11,7 +11,7 @@
   },
   "author": "Bobby Wibowo <bobby@fiery.me>",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=v10.24.1"
   },
   "license": "MIT",
   "scripts": {
