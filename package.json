@@ -44,7 +44,7 @@
     "gulp-stylelint": "~13.0.0",
     "postcss": "~8.1.8",
     "postcss-preset-env": "~6.7.0",
-    "stylelint": "~13.8.0",
+    "stylelint": "~14.0.1",
     "stylelint-config-standard": "~20.0.0"
   }
 }
