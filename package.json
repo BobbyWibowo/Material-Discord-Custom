@@ -20,6 +20,7 @@
     "watch": "gulp watch",
     "develop": "env NODE_ENV=development yarn watch"
   },
+  "dependencies": {},
   "devDependencies": {
     "browserslist": "~4.14.7",
     "cssnano": "~4.1.10",
