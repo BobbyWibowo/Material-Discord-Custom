@@ -2,25 +2,13 @@
 
 /** PermissionsViewer plugin **/
 
-/* Member Cards */
-.member-perms .member-perm {
-  position: relative;
-  min-width: 16px;
-  height: 16px;
-  padding: 0;
-  border-radius: 16px;
-  border: none;
-  background: var(--popout-color);
-  transition: 200ms ease;
-  font-size: 11px;
+.member-perms-title {
+  font-size: 14px;
+  color: var(--header-secondary);
+  margin-bottom: 8px;
+  font-weight: 700
+}
 
-  .perm-circle {
-    width: 16px !important;
-    height: 16px !important
-  }
-
-  .name {
-    color: inherit;
-    margin: 0 4px 0 2px
-  }
+.member-perms .member-perm .name {
+  margin-right: 8px !important
 }
