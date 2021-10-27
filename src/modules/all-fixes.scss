@@ -108,7 +108,7 @@
   }
 
   &[style*="background-color: rgb(114, 118"] {
-    background-color: rgba(65, 65, 65, 0.65) !important;
+    background-color: rgb(65 65 65 / 65%) !important;
 
     .slider-TkfMQL {
       background-color: #777 !important
