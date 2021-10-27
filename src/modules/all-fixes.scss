@@ -106,34 +106,6 @@
   cursor: pointer
 }
 
-.bd-addon-modal {
-  width: auto !important;
-  min-width: 600px !important;
-  max-width: 100% !important;
-
-  .bd-addon-modal-settings {
-    padding: 16px !important
-  }
-}
-
-.container-3auIfb {
-  &[style*="background-color: rgb(114"] {
-    background-color: var(--accent-rgb) !important;
-
-    .slider-TkfMQL {
-      background-color: var(--accent-color) !important
-    }
-  }
-
-  &[style*="background-color: rgb(114, 118"] {
-    background-color: rgb(65 65 65 / 65%) !important;
-
-    .slider-TkfMQL {
-      background-color: #777 !important
-    }
-  }
-
-  .slider-TkfMQL {
-    transform: translate3d(2px, 0, 0)
-  }
+.bd-addon-modal-settings {
+  padding-right: 16px !important
 }
