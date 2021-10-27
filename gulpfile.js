@@ -19,6 +19,10 @@ const dist = process.env.NODE_ENV === 'development'
   ? './dist-dev'
   : './dist'
 
+// BD_PLUGIN_PATH is an old alias, which was an incorrect decision since this is for a theme.
+// Kept for compatibility.
+const themePath = process.env.BD_THEME_PATH || process.env.BD_PLUGIN_PATH
+
 const postcssPlugins = [
   postcssPresetEnv()
 ]
@@ -123,7 +127,7 @@ gulp.task('watch:themes', () => {
 })
 
 gulp.task('touch', () => {
-  return run(`/usr/bin/touch "${process.env.BD_PLUGIN_PATH}"`).exec()
+  return run(`/usr/bin/touch "${themePath}"`).exec()
 })
 
 gulp.task('connect', () => {
@@ -135,7 +139,7 @@ gulp.task('connect', () => {
     port: 10002,
     livereload: false
   }, () => {
-    if (process.env.BD_PLUGIN_PATH) {
+    if (themePath) {
       (gulp.series('touch'))()
       gulp.watch(dist, gulp.series('touch'))
     }
