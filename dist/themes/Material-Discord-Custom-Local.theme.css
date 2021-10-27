@@ -8,6 +8,6 @@
  * @source https://github.com/BobbyWibowo/Material-Discord-Custom
  */
 /** Material Discord by CapnKitten - v3.0.3 (24/02/2021) **/
-@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=3.0.3);
-@import url(http://localhost:10002/src/source.css);
-@import url(http://localhost:10002/src/modules/all-overrides.css);
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=3.0.3");
+@import url("http://localhost:10002/src/source.css");
+@import url("http://localhost:10002/src/modules/all-overrides.css");
