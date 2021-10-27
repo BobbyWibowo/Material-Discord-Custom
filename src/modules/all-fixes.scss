@@ -80,18 +80,20 @@
 
 /** Nitro user's banner in Discord settings **/
 
-.settingsBanner-15-pZk {
-  height: auto;
-  min-height: 100px
-}
+[aria-label="USER_SETTINGS"] {
+  .settingsBanner-15-pZk {
+    height: auto;
+    min-height: 100px
+  }
 
-.bannerPremium-2hSAwz {
-  padding-top: 40% /* 5:2 aspect ratio (2 / 5 = 0.4) */
-}
+  .bannerPremium-2hSAwz {
+    padding-top: 40%; /* 5:2 aspect ratio (2 / 5 = 0.4) */
 
-.bannerPremium-2hSAwz + .userInfo-iCloHO .avatar-1uQSZT {
-  top: unset;
-  bottom: 238px
+    & + .userInfo-iCloHO .avatar-1uQSZT {
+      top: unset;
+      bottom: 238px
+    }
+  }
 }
 
 /** BetterDiscord-related fixes **/
