@@ -18,7 +18,7 @@ $upstream-font-family: "Google Sans", sans-serif;
   --accent-color: #{$accent-color} !important;
   --accent-color-hover: #{$accent-color-hover} !important;
   --accent-color-active: #{$accent-color-active} !important;
-  --accent-rgb: $accent-rgb !important
+  --accent-rgb: #{$accent-rgb} !important
 }
 
 /** Fonts **/
