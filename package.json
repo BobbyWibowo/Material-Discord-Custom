@@ -18,7 +18,8 @@
     "lint": "gulp lint",
     "build": "gulp default",
     "watch": "gulp watch",
-    "develop": "env NODE_ENV=development yarn watch"
+    "develop": "env NODE_ENV=development yarn watch",
+    "dev": "env NODE_ENV=development yarn watch"
   },
   "dependencies": {},
   "devDependencies": {
