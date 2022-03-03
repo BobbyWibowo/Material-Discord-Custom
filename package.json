@@ -40,7 +40,7 @@
     "gulp-eslint7": "~0.3.0",
     "gulp-if": "~3.0.0",
     "gulp-nodemon": "~2.5.0",
-    "gulp-postcss": "~9.0.0",
+    "gulp-postcss": "~9.0.1",
     "gulp-run": "~1.7.1",
     "gulp-sourcemaps": "~3.0.0",
     "gulp-stylelint": "~13.0.0",
