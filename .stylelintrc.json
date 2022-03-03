@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
+    "block-closing-brace-newline-before": null,
     "declaration-block-trailing-semicolon": "never",
     "indentation": 2,
     "no-descending-specificity": null,
