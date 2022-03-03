@@ -10,7 +10,7 @@ const run = require('gulp-run')
 const sass = require('gulp-dart-sass')
 const sassCompiler = require('sass')
 const sourcemaps = require('gulp-sourcemaps')
-const stylelint = require('gulp-stylelint')
+const stylelint = require('@ronilaukkarinen/gulp-stylelint')
 
 // Put built files for development on a Git-ignored directory.
 // This will prevent IDE's Git from unnecessarily
