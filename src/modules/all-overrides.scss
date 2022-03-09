@@ -4,6 +4,8 @@
 /** General **/
 
 :root {
+  --app-font: #{$font-family} !important;
+  --code-font: #{$font-family-monospace} !important;
   --accent-color: #{$accent-color} !important;
   --accent-color-hover: #{$accent-color-hover} !important;
   --accent-color-active: #{$accent-color-active} !important;
@@ -12,20 +14,6 @@
 
 /** Fonts **/
 
-* {
-  font-family: $font-family !important
-}
-
-.markup-2BOw-j {
-  pre,
-  pre *,
-  pre code,
-  pre code *,
-  code.inline {
-    font-family: $font-family-monospace !important
-  }
-}
-
 .contentColumnDefault-1VQkGM .ace_editor::before {
   /* font-family: $font-family-monospace !important; */
   display: none !important
@@ -33,6 +21,9 @@
 
 /** Upstream font for title bar **/
 
-.wordmark-2iDDfm.wordmarkWindows-1v0lYD {
-  font-family: $upstream-font-family !important
+.wordmark-2u86JB.wordmarkWindows-2dq6rw {
+  &::before,
+  &::after {
+    font-family: $upstream-font-family !important
+  }
 }

@@ -8,6 +8,6 @@ $accent-color-active: #3daee9;
 $accent-rgb: "66, 133, 244";
 
 /* stylelint-disable-next-line value-keyword-case */
-$font-family: Ubuntu, sans-serif;
-$font-family-monospace: "Fira Code", monospace;
+$font-family: Ubuntu; /* This only accepts one font name */
+$font-family-monospace: "Fira Code"; /* This only accepts one font name */
 $upstream-font-family: "Google Sans", sans-serif
