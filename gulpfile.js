@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const cssnano = require('cssnano')
 const del = require('del')
-const Fiber = require('fibers')
 const connect = require('gulp-connect')
 const eslint = require('gulp-eslint7')
 const postcss = require('gulp-postcss')
@@ -97,7 +96,7 @@ gulp.task('build:src', function () {
     ignore: '_*.scss'
   })
     .pipe(sourcemaps.init())
-    .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(_postcssPlugins))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(`${dist}/src`))
@@ -107,7 +106,7 @@ gulp.task('build:themes', function () {
   return gulp.src('./themes/**/*.scss', {
     ignore: '_*.scss'
   })
-    .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(postcssPlugins))
     .pipe(gulp.dest(`${dist}/themes`))
 })
