@@ -18,17 +18,38 @@ div#magane {
     }
   }
 
-  div.channel-textarea-stickers {
-    width: 24px !important;
-    position: relative !important
-  }
-
   .button {
     font-weight: bold !important;
     text-transform: uppercase !important
   }
 
-  .simplebar-scrollbar::before {
-    background-color: #{$accent-color} !important
+  [data-simplebar] {
+    .simplebar-scrollbar {
+      &::before {
+        background: rgb(var(--scrollbar-color)) !important;
+        border: 0 solid transparent !important;
+        border-radius: 5px !important
+      }
+
+      &.simplebar-visible::before {
+        opacity: 0.15 !important
+      }
+
+      &.simplebar-visible.simplebar-hover::before {
+        opacity: 0.25 !important
+      }
+    }
+
+    &.simplebar-dragging {
+      .simplebar-scrollbar {
+        &.simplebar-visible::before {
+          opacity: 0.3 !important
+        }
+      }
+    }
+  }
+
+  .simplebar-content-wrapper::-webkit-scrollbar {
+    display: none !important
   }
 }
