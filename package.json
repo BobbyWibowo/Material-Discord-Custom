@@ -24,7 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "@ronilaukkarinen/gulp-stylelint": "~14.0.6",
-    "browserslist": "~4.19.3",
+    "browserslist": "~4.20.2",
     "cssnano": "~5.1.7",
     "del": "~6.0.0",
     "eslint": "~8.14.0",
