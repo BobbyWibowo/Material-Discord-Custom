@@ -45,5 +45,6 @@ package-lock.json
 
 # User files
 .DS_Store
+.node-version
 .nvmrc
 !.gitkeep
