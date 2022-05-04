@@ -13,14 +13,16 @@ div#magane {
     animation: bottom-pop-out 400ms var(--default-animation) !important;
 
     div.stickers div.pack span {
-      font-weight: bold !important;
-      font-variant-caps: small-caps !important
+      font-weight: bold !important
+    }
+
+    a {
+      color: hsl(var(--accent-hsl))
     }
   }
 
   .button {
-    font-weight: bold !important;
-    text-transform: uppercase !important
+    font-weight: bold !important
   }
 
   [data-simplebar] {
