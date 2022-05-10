@@ -2,12 +2,12 @@
 
 /** Disable Streaming badge on Guild icons **/
 
-.iconBadge-2NuvG9 {
-  display: none !important
-}
-
-[aria-label="Servers"] [class^="listItem-"] .wrapper-25eVIn svg mask use[href$="-upper_badge_masks"] {
-  display: none !important
+[aria-label="Servers"] [class^="listItem-"] {
+  [class^="iconBadge-"],
+  rect[id$="-upper_badge_masks"],
+  use[href$="-upper_badge_masks"] {
+    display: none !important
+  }
 }
 
 /** Message controls - simplified styling, and their positions now make more sense in multi-messages **/
