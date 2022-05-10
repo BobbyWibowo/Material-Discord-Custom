@@ -3,7 +3,35 @@
 
 /** Magane plugin **/
 
+// 💖 8544ea5ce32fd9e17df806eb1cfeab47
+// 💘 4c1490be77de62e7cf3e5bb5e68dfff8
+// 💝 99ee25afc79bd853311f019eddc53ab4
+
 div#magane {
+  div.magane-button {
+    top: -1px;
+    position: relative;
+    background-image: url("https://discord.com/assets/4c1490be77de62e7cf3e5bb5e68dfff8.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    width: 36px;
+    height: 44px;
+    transform: scale(1);
+    /* stylelint-disable-next-line scss/no-global-function-names */
+    filter: invert(70%) grayscale(100%) brightness(130%);
+    transition: all 0.075s ease-in;
+
+    &:hover {
+      transform: scale(1.14);
+      filter: grayscale(0%)
+    }
+
+    img {
+      display: none
+    }
+  }
+
   div.stickerWindow {
     background-color: var(--popout-color) !important;
     border-radius: var(--popout-radius-big) !important;
@@ -12,8 +40,81 @@ div#magane {
     bottom: 66px !important;
     animation: bottom-pop-out 400ms var(--default-animation) !important;
 
-    div.stickers div.pack span {
-      font-weight: bold !important
+    div.packs-toolbar {
+      div.packs {
+        div.pack {
+          div.icon-plus,
+          div.icon-favorite {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: 85%;
+            background-position: center !important
+          }
+
+          div.icon-plus {
+            background-image: url("https://discord.com/assets/28a6206f93399999d1a908d5c45232ad.svg");
+            /* stylelint-disable-next-line scss/no-global-function-names */
+            filter: grayscale(100%) brightness(125%) !important
+          }
+
+          div.icon-favorite {
+            background-image: url("https://discord.com/assets/430e873bc74e81778ccf63f5d440f0ca.svg");
+            /* stylelint-disable-next-line scss/no-global-function-names */
+            filter: invert(70%) grayscale(100%) brightness(130%) !important
+          }
+
+          &:hover {
+            div.icon-plus {
+              /* stylelint-disable-next-line scss/no-global-function-names */
+              filter: grayscale(0%) brightness(100%) !important
+            }
+
+            div.icon-favorite {
+              /* stylelint-disable-next-line scss/no-global-function-names */
+              filter: invert(0%) grayscale(0%) brightness(100%) !important
+            }
+          }
+        }
+      }
+    }
+
+    div.stickers div.pack {
+      span {
+        font-weight: bold !important
+      }
+
+      div.sticker {
+        div.addFavorite,
+        div.deleteFavorite {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          top: unset !important;
+          right: 3px !important;
+          bottom: 3px !important;
+          transform: none !important;
+          opacity: 0.75;
+
+          &:hover {
+            transform: scale(1.25) !important;
+            opacity: 1
+          }
+
+          svg {
+            display: none
+          }
+        }
+
+        div.addFavorite {
+          background-image: url("https://discord.com/assets/0483f2b648dcc986d01385062052ae1c.svg");
+        }
+
+        div.deleteFavorite {
+          background-image: url("https://discord.com/assets/fda7477c4eea759cf5407472387453bf.svg");
+        }
+      }
     }
 
     a {
