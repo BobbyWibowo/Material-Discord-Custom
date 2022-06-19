@@ -35,8 +35,7 @@ div#magane {
     background-color: var(--popout-color) !important;
     border-radius: var(--popout-radius) !important;
     box-shadow: var(--shadow-3dp) !important;
-    right: 256px !important;
-    bottom: 66px !important;
+    margin-right: 5px;
     animation: bottom-pop-out 400ms var(--default-animation) !important;
 
     div.packs-toolbar {
