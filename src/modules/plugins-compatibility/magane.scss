@@ -33,13 +33,21 @@ div#magane {
 
   div.stickerWindow {
     background-color: var(--popout-color) !important;
-    border-radius: var(--popout-radius-big) !important;
+    border-radius: var(--popout-radius) !important;
     box-shadow: var(--shadow-3dp) !important;
     right: 256px !important;
     bottom: 66px !important;
     animation: bottom-pop-out 400ms var(--default-animation) !important;
 
     div.packs-toolbar {
+      &.has-scroll-x {
+        border-radius: 0 0 var(--popout-radius) var(--popout-radius) !important
+      }
+
+      &.has-scroll-y {
+        border-radius: var(--popout-radius) 0 0 var(--popout-radius) !important
+      }
+
       div.packs {
         div.pack {
           div.icon-plus,
@@ -48,7 +56,7 @@ div#magane {
             height: 100%;
             margin: 0;
             background-repeat: no-repeat;
-            background-size: 85%;
+            background-size: 75%;
             background-position: center !important
           }
 
@@ -125,33 +133,11 @@ div#magane {
     font-weight: bold !important
   }
 
-  [data-simplebar] {
-    .simplebar-scrollbar {
-      &::before {
-        background: rgb(var(--scrollbar-color)) !important;
-        border: 0 solid transparent !important;
-        border-radius: 5px !important
-      }
+  ::-webkit-scrollbar {
+    width: 6px !important;
 
-      &.simplebar-visible::before {
-        opacity: 0.15 !important
-      }
-
-      &.simplebar-visible.simplebar-hover::before {
-        opacity: 0.25 !important
-      }
+    &-thumb {
+      border-radius: var(--popout-radius) !important
     }
-
-    &.simplebar-dragging {
-      .simplebar-scrollbar {
-        &.simplebar-visible::before {
-          opacity: 0.3 !important
-        }
-      }
-    }
-  }
-
-  .simplebar-content-wrapper::-webkit-scrollbar {
-    display: none !important
   }
 }
