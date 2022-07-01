@@ -7,30 +7,6 @@
 // 💝 99ee25afc79bd853311f019eddc53ab4
 
 div#magane {
-  div.magane-button {
-    top: -1px;
-    position: relative;
-    background-image: url("https://discord.com/assets/4c1490be77de62e7cf3e5bb5e68dfff8.svg");
-    background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: center;
-    width: 36px;
-    height: 44px;
-    transform: scale(1);
-    /* stylelint-disable-next-line scss/no-global-function-names */
-    filter: invert(70%) grayscale(100%) brightness(130%);
-    transition: all 0.075s ease-in;
-
-    &:hover {
-      transform: scale(1.14);
-      filter: grayscale(0%)
-    }
-
-    img {
-      display: none
-    }
-  }
-
   div.stickerWindow {
     background-color: var(--popout-color) !important;
     border-radius: var(--popout-radius) !important;
@@ -139,5 +115,27 @@ div#magane {
     &-thumb {
       border-radius: var(--popout-radius) !important
     }
+  }
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+div#maganeButton {
+  top: -1px;
+  position: relative;
+  background-image: url("https://discord.com/assets/4c1490be77de62e7cf3e5bb5e68dfff8.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  width: 36px;
+  height: 44px;
+  /* stylelint-disable-next-line scss/no-global-function-names */
+  filter: invert(70%) grayscale(100%) brightness(130%);
+
+  &:hover {
+    filter: grayscale(0%)
+  }
+
+  img {
+    display: none
   }
 }
