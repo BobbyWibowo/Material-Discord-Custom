@@ -1,16 +1,16 @@
 @charset "utf-8";
 
-/** Full-height Nitro banner in User Settings > My Account **/
+/** Full-height Nitro user's banner in Discord settings **/
 
 [class^="accountProfileCard-"] {
   [class*="bannerPremium-"][style*="url"] {
-    aspect-ratio: 600 / 239;
-    height: auto !important
-  }
+    aspect-ratio: 340 / 120;
+    height: auto !important;
 
-  div[class^="avatar-"] {
-    top: unset !important;
-    margin-top: -12px
+    & + [class^="userInfo-"] [class*="avatar-"] {
+      top: unset;
+      bottom: 238px
+    }
   }
 }
 
