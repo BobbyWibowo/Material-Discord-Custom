@@ -4,8 +4,7 @@
 
 span[id*="message-username-"] {
   [class*="botTag-"] {
-    margin-top: unset;
-    position: relative;
-    top: 7px
+    margin-top: unset !important;
+    top: 0.4rem !important
   }
 }
