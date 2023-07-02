@@ -109,8 +109,10 @@ div#magane {
   }
 
   ::-webkit-scrollbar {
+    /*
     width: 6px !important;
     height: 6px !important;
+    */
 
     &-thumb {
       border-radius: var(--popout-radius) !important
