@@ -142,9 +142,11 @@ div#maganeButton {
   }
 }
 
-/* Fix sticker windows not displaying with this theme */
+/* stylelint-disable-next-line selector-id-pattern */
 div#maganeContainer {
   --background-tertiary: var(--attachment-color);
+
+  /* Fix sticker window not displaying with this theme */
   z-index: 2000;
-  position: relative;
+  position: relative
 }
