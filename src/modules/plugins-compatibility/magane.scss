@@ -141,3 +141,10 @@ div#maganeButton {
     display: none
   }
 }
+
+/* Fix sticker windows not displaying with this theme */
+div#maganeContainer {
+  --background-tertiary: var(--attachment-color);
+  z-index: 2000;
+  position: relative;
+}
