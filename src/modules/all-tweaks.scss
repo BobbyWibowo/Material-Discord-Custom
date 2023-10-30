@@ -1,84 +1,52 @@
 @charset "utf-8";
 
-/** Full-height Nitro user's banner in Discord settings **/
+/** Generic "Discord" title bar **/
 
-[class^="accountProfileCard-"] {
-  [class*="bannerPremium-"][style*="url"] {
-    aspect-ratio: 340 / 120;
-    height: auto !important;
-
-    & + [class^="userInfo-"] [class*="avatar-"] {
-      top: unset;
-      bottom: 238px
-    }
-  }
+div[class^="wordmarkWindows_"]::before,
+div[class^="wordmarkWindows_"]::after {
+  font-family: "Google Sans", sans-serif !important
 }
 
-/** Disable Streaming badge on Guild icons **/
-
-[aria-label="Servers"] [class^="listItem-"] {
-  [class^="iconBadge-"],
-  rect[id$="-upper_badge_masks"],
-  use[href$="-upper_badge_masks"] {
-    display: none !important
-  }
+div[class^="wordmarkWindows_"] {
+  margin-left: 5px
 }
 
-/** Message controls - simplified styling, and their positions now make more sense in multi-messages **/
-
-.message-2qnXI6 {
-  .buttonContainer-DHceWr {
-    right: -8px !important;
-
-    .buttons-cl5qTG {
-      transition: opacity 250ms var(--default-animation) !important;
-
-      &,
-      &:hover {
-        max-width: unset !important
-      }
-
-      .wrapper-2aW0bm {
-        box-shadow: none !important;
-        background: none !important;
-        border-radius: 0 !important;
-
-        .button-1ZiXG9 {
-          border-radius: 16px !important
-        }
-      }
-    }
-  }
-
-  &.groupStart-23k01U {
-    .buttonContainer-DHceWr {
-      top: 45px !important
-    }
-
-    .repliedMessage-VokQwo ~ .buttonContainer-DHceWr {
-      top: 68px !important
-    }
-  }
-
-  &:not(.groupStart-23k01U) .buttonContainer-DHceWr {
-    top: 24px !important
-  }
+div[class^="wordmarkWindows_"]::before {
+  display: none
 }
 
-/** Message timestamps at hover **/
-
-.container-3FojY8 .timestampVisibleOnHover-2bQeI4,
-.cozy-3raOZG.wrapper-2a6GCs .timestamp-3ZCmNB.alt-1uNpEt {
-  transition: opacity 250ms !important
+div[class^="wordmarkWindows_"]::after {
+  font-weight: bold;
+  content: "Discord"
 }
 
-/** Message replies **/
+/** Disable Streaming/Voice badges on Guild icons **/
 
-.repliedMessage-VokQwo {
-  opacity: 1;
-  transition: 250ms opacity;
+div[class^="listItem_"] .iconBadge_fdf33a {
+  display: none
+}
 
-  .username-1A8OIy {
-    opacity: 1 !important
-  }
+div[class^="listItem_"] foreignObject[mask] {
+  mask: none
+}
+
+/** Avoid text clipping due to message border radius CSS trickeries **/
+
+.wrapper__09ecc:not(.groupStart__56db5)::before,
+.wrapper__09ecc:not(.groupStart__56db5)::after {
+  /* this might be more closely related with your desktop's render resolution instead */
+  top: calc(var(--message-radius) / 1.45 * -1);
+  border-width: calc(var(--message-radius) / 2.8)
+}
+
+/** Limit height of user popup **/
+
+div[class^="userPopoutOverlayBackground_"] {
+  max-height: 60vh
+}
+
+/** Disable Gift Nitro button **/
+
+div[class*="buttons_"] button[aria-label="Send a gift"] {
+  display: none !important
 }
