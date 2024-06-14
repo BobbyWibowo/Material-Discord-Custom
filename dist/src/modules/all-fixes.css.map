@@ -1,1 +1,1 @@
-{"version":3,"sources":["modules/all-fixes.scss","modules/all-fixes.css"],"names":[],"mappings":"AAGA,mBACE,wBCDF","file":"all-fixes.css","sourcesContent":["@charset \"utf-8\";\n\n/** Always full width for codeblocks **/\n.markup_a7e664 pre {\n  max-width: 100% !important\n}\n","/** Always full width for codeblocks **/\n.markup_a7e664 pre {\n  max-width: 100% !important;\n}"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"all-fixes.css","sourcesContent":[]}
