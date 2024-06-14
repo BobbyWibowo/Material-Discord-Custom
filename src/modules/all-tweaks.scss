@@ -50,3 +50,8 @@ div[class^="userPopoutOverlayBackground_"] {
 div[class*="buttons_"] button[aria-label="Send a gift"] {
   display: none !important
 }
+
+/** Always full width for codeblocks **/
+.markup_a7e664 pre {
+  max-width: 100% !important
+}
