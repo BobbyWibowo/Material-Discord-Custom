@@ -22,12 +22,11 @@ div[class^="wordmarkWindows_"]::after {
 
 /** Disable Streaming/Voice badges on Guild icons **/
 
-div[class^="listItem_"] .iconBadge_fdf33a {
-  display: none
-}
-
-div[class^="listItem_"] foreignObject[mask] {
-  mask: none
+div[class^="listItem_"] div[class^="wrapper_"] {
+  & > svg defs rect[id$="-upper_badge_masks"],
+  & > div[class^="upperBadge_"] {
+    display: none
+  }
 }
 
 /** Avoid text clipping due to message border radius CSS trickeries **/
