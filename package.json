@@ -23,7 +23,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@ronilaukkarinen/gulp-stylelint": "~14.0.6",
+    "@ronilaukkarinen/gulp-stylelint": "~14.1.2",
     "browserslist": "~4.21.4",
     "cssnano": "~5.1.14",
     "del": "~6.1.1",
