@@ -8,13 +8,16 @@ on:
       - 'src/**/*.scss'
       - 'themes/**/*.scss'
       - 'gulpfile.js'
+
+  workflow_dispatch:
+
 env:
   NODE_VERSION: 18
 
 jobs:
   build:
     name: Rebuild and minify dist assets
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
