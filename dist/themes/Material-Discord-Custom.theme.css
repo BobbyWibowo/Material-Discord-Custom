@@ -1,6 +1,6 @@
 /**
  * @name Material_Discord_Custom
- * @version 2.0.0
+ * @version 2.0.1
  * @description A theme based on Google's Material Design
  * @author CapnKitten
  *
@@ -9,4 +9,4 @@
  */
 /** Material Discord by CapnKitten (22/01/2023) -- unix timestamp is mainly to enforce browser cache refresh **/
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css?v=1674360530");
-@import url("https://bobbywibowo.github.io/Material-Discord-Custom/dist/src/source.css?v=2.0.0");
+@import url("https://bobbywibowo.github.io/Material-Discord-Custom/dist/src/source.css?v=2.0.1");
