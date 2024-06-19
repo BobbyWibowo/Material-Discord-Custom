@@ -9,7 +9,7 @@ on:
       - 'themes/**/*.scss'
       - 'gulpfile.js'
 env:
-  NODE_VERSION: 16
+  NODE_VERSION: 18
 
 jobs:
   build:
