@@ -37,7 +37,7 @@
     "gulp-cli": "~2.3.0",
     "gulp-connect": "~5.7.0",
     "gulp-dart-sass": "~1.0.2",
-    "gulp-eslint-new": "~1.9.1",
+    "gulp-eslint-new": "~2.1.0",
     "gulp-if": "~3.0.0",
     "gulp-nodemon": "~2.5.0",
     "gulp-postcss": "~9.0.1",
