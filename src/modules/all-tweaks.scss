@@ -51,6 +51,7 @@ div[class*="buttons_"] button[aria-label="Send a gift"] {
 }
 
 /** Always full width for codeblocks **/
-.markup_a7e664 pre {
+
+[class*="markup_"] pre {
   max-width: 100% !important
 }
