@@ -1,6 +1,6 @@
 {
   "name": "material-discord-custom",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Material design theme for Discord with modular fixes/tweaks/changes",
   "repository": {
     "type": "git",
@@ -23,16 +23,19 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@eslint/eslintrc": "~3.1.0",
+    "@eslint/js": "~9.5.0",
     "@ronilaukkarinen/gulp-stylelint": "~14.1.2",
     "browserslist": "~4.23.1",
     "cssnano": "~7.0.2",
     "del": "~6.1.1",
-    "eslint": "~9.5.0",
+    "eslint": "~8.57.0",
     "eslint-config-standard": "~17.1.0",
     "eslint-plugin-compat": "~5.0.0",
     "eslint-plugin-import": "~2.29.1",
-    "eslint-plugin-n": "~17.9.0",
+    "eslint-plugin-n": "~16.6.2",
     "eslint-plugin-promise": "~6.2.0",
+    "globals": "~15.6.0",
     "gulp": "~5.0.0",
     "gulp-cli": "~3.0.0",
     "gulp-connect": "~5.7.0",
@@ -45,7 +48,7 @@
     "gulp-sourcemaps": "~3.0.0",
     "postcss": "~8.4.38",
     "postcss-preset-env": "~9.5.14",
-    "stylelint": "~16.6.1",
-    "stylelint-config-standard-scss": "~13.1.0"
+    "stylelint": "~15.11.0",
+    "stylelint-config-standard-scss": "~11.1.0"
   }
 }
