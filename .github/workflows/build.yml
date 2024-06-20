@@ -5,9 +5,9 @@ on:
     branches:
       - master
     paths:
-      - 'src/**/*.scss'
-      - 'themes/**/*.scss'
-      - 'gulpfile.js'
+      - src/**/*.scss
+      - themes/**/*.scss
+      - gulpfile.js
 
   workflow_dispatch:
 
