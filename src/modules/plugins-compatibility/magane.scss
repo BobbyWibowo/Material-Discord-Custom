@@ -7,6 +7,10 @@
 // 💝 99ee25afc79bd853311f019eddc53ab4
 
 div#magane {
+  & {
+    --background-tertiary: var(--attachment-color);
+  }
+
   div.stickerWindow {
     background-color: var(--popout-color) !important;
     border-radius: var(--popout-radius) !important;
@@ -140,13 +144,4 @@ div#maganeButton {
   img {
     display: none
   }
-}
-
-/* stylelint-disable-next-line selector-id-pattern */
-div#maganeContainer {
-  --background-tertiary: var(--attachment-color);
-
-  /* Fix sticker window not displaying with this theme */
-  z-index: 2000;
-  position: relative
 }
