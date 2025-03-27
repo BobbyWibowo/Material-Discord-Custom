@@ -1,5 +1,7 @@
 # Material-Discord-Custom
 
+![build workflow](https://github.com/BobbyWibowo/Material-Discord-Custom/actions/workflows/build.yml/badge.svg)
+
 Material design theme for Discord with modular fixes/tweaks/changes.
 
 ## BetterDiscord theme files
