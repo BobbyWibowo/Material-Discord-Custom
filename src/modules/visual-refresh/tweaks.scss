@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/** Restore Discord's built-in title bar **/
+
+.visual-refresh .bar_c38106 .title__85643 {
+  gap: var(--space-8);
+}
+
+.visual-refresh .bar_c38106 .title__85643::before,
+.visual-refresh .bar_c38106 .title__85643::after {
+  display: none;
+}
+
+.visual-refresh .bar_c38106 .title__85643 .guildIcon__85643,
+.visual-refresh .bar_c38106 .title__85643 .text-sm\/medium_cf4812,
+.visual-refresh .bar_c38106 .title__85643 svg {
+  display: block;
+}
