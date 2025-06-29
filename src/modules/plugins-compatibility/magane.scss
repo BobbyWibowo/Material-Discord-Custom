@@ -7,10 +7,6 @@
 // 💝 99ee25afc79bd853311f019eddc53ab4
 
 div#magane {
-  & {
-    --background-tertiary: var(--attachment-color);
-  }
-
   div.stickerWindow {
     background-color: var(--popout-color) !important;
     border-radius: var(--popout-radius) !important;
@@ -143,5 +139,15 @@ div#maganeButton {
 
   img {
     display: none
+  }
+}
+
+div#magane,
+div.magane-vencord-modal {
+  code {
+    font-family: var(--font-code) !important;
+    background-color: var(--attachment-color) !important;
+    border-radius: var(--media-radius) !important;
+    border: none !important;
   }
 }
