@@ -106,12 +106,6 @@ div#magane {
   .button {
     font-weight: bold !important
   }
-
-  ::-webkit-scrollbar {
-    &-thumb {
-      border-radius: var(--popout-radius) !important
-    }
-  }
 }
 
 /* stylelint-disable-next-line selector-id-pattern */
