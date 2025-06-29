@@ -22,7 +22,7 @@
     "dev": "env NODE_ENV=development yarn watch"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "~3.1.0",
+    "@eslint/eslintrc": "~3.3.1",
     "@eslint/js": "~9.5.0",
     "@ronilaukkarinen/gulp-stylelint": "~14.1.2",
     "browserslist": "~4.23.1",
