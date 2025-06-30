@@ -62,7 +62,7 @@ div#magane {
     }
 
     div.stickers div.pack {
-      span {
+      span:not(.subtext) {
         font-weight: bold !important
       }
 
