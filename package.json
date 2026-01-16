@@ -35,7 +35,7 @@
     "eslint-plugin-n": "~16.6.2",
     "eslint-plugin-promise": "~6.2.0",
     "globals": "~15.6.0",
-    "gulp": "~5.0.0",
+    "gulp": "~5.0.1",
     "gulp-cli": "~3.0.0",
     "gulp-connect": "~5.7.0",
     "gulp-dart-sass": "~1.1.0",
